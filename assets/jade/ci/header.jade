@@ -2,21 +2,21 @@ header
 	.row
 		.col-md-2
 		.col-md-8
-			.row
+			.div
 				img.img-responsive(src="../image/banner_top.jpg")
 			.row
 				.col-md-6
-					ul.list-unstyle.list-inline
+					ul.list-unstyled.list-inline
 						li
-							a LIBERO.PE
+							a(href="#") LIBERO.PE
 						li
-							a ELPOPULAR.PE
+							a(href="#") ELPOPULAR.PE
 						li
-							a FUNDACION GUSTAVO MOHME LLONA
+							a(href="#") FUNDACION GUSTAVO MOHME LLONA
 				.col-md-6
-					ul.list-unstyle.list-inline
+					ul.list-unstyled.list-inline
 						li
-							a SUSCRIBETE AL BOLETIN
+							a(href="#") SUSCRIBETE AL BOLETIN
 						li
 							a 
 								i.fa.fa-facebook
@@ -40,8 +40,39 @@ header
 		.col-md-8
 			.row
 				.col-md-4
-
+					img.img-responsive(src="../image/logo-la-republica.jpg")
 				.col-md-4
+					include mixin.jade
+					+submenu('DOMINGO','HABLA LA LIDEREZA DEL NACIONALISMO')
 				.col-md-4
+					.div
+						img.img-responsive(src="../image/img_editorial_text.jpg")
+						p 
+							strong La corrupción, los origenes
+						p
+							em por: Gustavo Mohme Llona
+						img.img-responsive(src="../image/img_author.jpg")
 			.row
+				ul.list-unstyled.list-inline
+					li
+						a(href="#") POLITICA
+					li
+						a(href="#") ECONOMIA
+					li
+						a(href="#") SOCIEDAD
+					li
+						a(href="#") ELECC.REGIONALES
+					li
+						a(href="#") DEPORTES
+					li
+						a(href="#") CHAMPIONS L.
+					li
+						a(href="#") ESPECTÁCULOS
+					li
+						a(href="#") ED. IMPRESA
+					li
+						a(href="#") REGIONALES
+					li
+						a(href="#") MAS SECCIONES
+							i.fa.fa-angle-down
 		.col-md-2
