@@ -1,0 +1,27 @@
+{
+  "name": "lablarepublica",
+  "version": "1.0.0",
+  "description": "Lab La Republica",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizabethqsaico/Lab-LaRepublica.git"
+  },
+  "author": "Elizabeth Viviana Arabelia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elizabethqsaico/Lab-LaRepublica/issues"
+  },
+  "homepage": "https://github.com/elizabethqsaico/Lab-LaRepublica#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.1"
+  }
+}
