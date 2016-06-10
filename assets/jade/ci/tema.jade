@@ -11,8 +11,7 @@
 				ul.pagination
 					li
 						a(href="#" aria-label="Previous") 
-							span(aria-hidden="true")
-							&laquo;
+							span.fa.fa-chevron-left(aria-hidden="true")
 					include mixin.jade
 					+temas-dia('Globos de oro')
 					+temas-dia('Youtube')
@@ -25,8 +24,8 @@
 					+temas-dia('Balón de Oro')
 					li
 						a(href="#" aria-label="Next") 
-							span(aria-hidden="true")
-								&raquo;
+							span.fa.fa-chevron-right(aria-hidden="true")
+								
 			include tema-banner.jade
 			.row
 		.col-md-2
