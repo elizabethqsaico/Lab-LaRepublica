@@ -12,7 +12,6 @@
 					li
 						a(href="#" aria-label="Previous") 
 							span.fa.fa-chevron-left(aria-hidden="true")
-					include mixin.jade
 					+temas-dia('Globos de oro')
 					+temas-dia('Youtube')
 					+temas-dia('PNP')
@@ -24,10 +23,19 @@
 					+temas-dia('Balón de Oro')
 					li
 						a(href="#" aria-label="Next") 
-							span.fa.fa-chevron-right(aria-hidden="true")
-								
+							span.fa.fa-chevron-right(aria-hidden="true")							
 			include tema-banner.jade
+			include mixin.jade
+			+cabecera('Blogs')
+			.row
+				+section-articulo('Lunes,16 de junio de 2016','El gol de la muerte','../image/clubventa.jpg','BLOG','LIBROS')
+				+section-articulo('Lunes,16 de junio de 2016','Dios ha muerto... tengo las mano cubiertas de sangre','../image/clubventa.jpg','BLOG','Ya lo pasado, PASADO')
+				+section-articulo('Lunes,16 de junio de 2016','¿Cuál es tu queso favorito?','../image/clubventa.jpg','BLOG','Décimas Cosas')
 		.col-md-2
 			img.img-responsive(src="../image/cambiatullanta.jpg")
+
+			
+
+
 
 

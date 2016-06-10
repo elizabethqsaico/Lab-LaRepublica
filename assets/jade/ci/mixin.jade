@@ -1,13 +1,45 @@
-mixin submenu(name, conten)
+//-mixin submenu(name, conten)
 	.div
-		a=name
-		p=conten
-// para la lista de los temas de día
-mixin temas-dia(tema)
+		h2= name
+		p= conten
+//-para la lista de los temas de día
+//-mixin temas-dia(tema)
 	li
 		a(href="#")= tema
 			img(src="../image/bullet.gif")
-//para la lista del footer
-mixin listafooter(nombre)
+//-para la lista del footer
+//-mixin listafooter(nombre)
 	li
-		a(href="#")=nombre
+		a(href="#")= nombre
+//-mixin cabecera(section)
+	h1= section
+	h3= LO ÚTIMO EN 
+	h3= section
+		span.fa.fa-angle-double-down
+//-mixin section-article(fecha, titulo, url, section, frase)
+	.col-md-4
+		.article
+			p= fecha
+			h4= titulo
+			.article-text
+				img(src= url)
+				h5= section
+				h4= frase
+
+//-mixin para todas las paginas solo enviando la url
+mixin imagen(url)
+	img.img-responsive(src= url)
+
+mixin header-lista(item)
+	ul.list-unstyled 
+		each val in [item]
+			li
+				a(href="#")= val
+mixin header-editorial(titulo,subtitulo)
+	.div
+		h4= titulo
+		p= subtitulo
+mixin autor(titulo,nombreautor)
+	.div
+		h4= titulo
+		p= 'por:' + nombreautor
