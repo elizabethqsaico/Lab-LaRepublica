@@ -9,18 +9,25 @@ html(lang='es-PE')
 					block header-banner
 						block header-image
 							+imagen('../image/banner_top.jpg')
+						.row
 							block header-list
-								.row
-									.col-md-6
-										ul.list-unstyled 
-											+header-lista('LIBERO.PE')
-											+header-lista('ELPOPULAR.PE')
-											+header-lista('FUNDACION GUSTAVO MOHME LLONA')
-									.col-md-6
-										ul.list-unstyled 
-											+header-lista('SUSCRIBETE AL BOLETIN')
-
+								.col-md-6
+									ul.list-unstyled.list-inline
+										+header-lista('LIBERO.PE')
+										+header-lista('ELPOPULAR.PE')
+										+header-lista('FUNDACION GUSTAVO MOHME LLONA')
 							block header-redes
+								.col-md-6
+									ul.list-unstyled.list-inline
+										+header-lista('SUSCRIBETE AL BOLETIN')
+										+li-span('fa fa-facebook')
+										+li-span('fa fa-twitter')
+										+li-span('fa fa-google-plus')
+										+li-span('fa fa-envelope')
+										+li-span('fa fa-rss')
+										li
+											input(placeholder="Buscar")
+											span.fa.fa-search
 				.col-md-2
 			.row
 				.col-md-2

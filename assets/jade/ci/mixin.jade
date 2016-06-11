@@ -7,6 +7,10 @@ mixin imagen(url)
 //-		each val in [item]
 //-			li
 //-				a(href="#")= val
+mixin li-span(span)
+	li
+		a(href="#") 
+			span(class= span)
 mixin header-lista(item)
 	li
 		a(href="#")= item
