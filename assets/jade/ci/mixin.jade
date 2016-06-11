@@ -6,7 +6,12 @@ mixin imagen(url)
 //-	ul.list-unstyled 
 //-		each val in [item]
 //-			li
-//-				a(href="#")= val
+//-	
+			a(href="#")= val
+mixin li-a-img(tema,imagen)
+	li
+		a(href="#")= tema
+			img(src= imagen)
 mixin li-span(span)
 	li
 		a(href="#") 

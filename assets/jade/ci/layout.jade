@@ -3,6 +3,7 @@ html(lang='es-PE')
 	include head.jade
 	body
 		.container
+			//-header
 			.row
 				.col-md-2
 				.col-md-8
@@ -45,16 +46,164 @@ html(lang='es-PE')
 									+autor('La corrupción, los origenes','Gustavo Mohme Llona')
 									+imagen('../image/img_author.jpg')
 					block header-menu
-						.row
-							ul.list-unstyled.list-inline
-								+header-lista('POLITICA')
-								+header-lista('SOCIEDAD')
-								+header-lista('ELECC.REGIONALES')
-								+header-lista('DEPORTES')
-								+header-lista('CHAMPIONS L')
-								+header-lista('ESPECTÁCULOS')
-								+header-lista('ED. IMPRESA')
-								+header-lista('REGIONALES')
-								+header-lista('MAS SECCIONES')
+						ul.list-unstyled.list-inline
+							+header-lista('POLITICA')
+							+header-lista('SOCIEDAD')
+							+header-lista('ELECC.REGIONALES')
+							+header-lista('DEPORTES')
+							+header-lista('CHAMPIONS L')
+							+header-lista('ESPECTÁCULOS')
+							+header-lista('ED. IMPRESA')
+							+header-lista('REGIONALES')
+							+header-lista('MAS SECCIONES')
+							+li-span('fa fa-angle-down')
 				.col-md-2
-
+			//- columna-contenido
+			.row
+				.col-md-2
+					block publicidad-left-image
+						+imagen('../image/clubventa.jpg')
+				.col-md-8
+					block tema-dia
+						ul.pagination
+							+header-lista('TEMAS DEL DÍA')
+							li
+								a(href="#" aria-label="Previous") 
+									span.fa.fa-chevron-left(aria-hidden="true")
+							+li-a-img('Globos de oro','../image/bullet.gif')
+							+li-a-img('Youtube','../image/bullet.gif')
+							+li-a-img('PNP','../image/bullet.gif')
+							+li-a-img('Charlie Hebdo','../image/bullet.gif')
+							+li-a-img('FC Barcelona','../image/bullet.gif')
+							+li-a-img('Alianza Lima','../image/bullet.gif')
+							+li-a-img('Balón de Oro','../image/bullet.gif')
+							+li-a-img('Alianza Lima','../image/bullet.gif')
+							+li-a-img('Balón de Oro','../image/bullet.gif')
+							li
+								a(href="#" aria-label="Next") 
+									span.fa.fa-chevron-right(aria-hidden="true")
+					block tema-banner-image
+						+imagen('../image/banner-header.jpg')
+					block content
+						h1.text-center Trabajando en este contenido
+				.col-md-2
+					block publicidad-right-image
+						+imagen('../image/cambiatullanta.jpg')
+			//-footer
+			.row
+				.col-md-2
+				.col-md-8
+					.row
+						.col-md-4
+							block footer-logo-image
+								+imagen('../image/logo-grupo-la-republica.png')
+							block footer-datos
+								h4 Grupo La República Digital
+								p Jr. Camaná 320 Cercado de Lima
+									<br> Teléfono: 711-6000</br>
+									<br> (Central Telefónica)</br>
+								p Todos los derechos reservados -2015
+						.col-md-2
+							ul.list-unstyled
+								+header-lista('Roger Federer')
+								+header-lista('SBS')
+								+header-lista('Scarlett Johansson')
+								+header-lista('Scotiabank')
+								+header-lista('Selena Goméz')
+								+header-lista('Spiderman')
+								+header-lista('Sporting Cristal')
+								+header-lista('Sunat')
+								+header-lista('Telefónica del Perú')
+								+header-lista('The Walking Dead')
+								+header-lista('Twitter')
+								+header-lista('Universidad Cesar Vallejo ')
+								+header-lista('Universidad San Martin')
+								+header-lista('Universitario de Deportes')
+								+header-lista('XBox')
+								+header-lista('Youtube')
+								+header-lista('Bayern Munich')
+								+header-lista('Bayern Munich')
+								+header-lista('BBVA')
+								+header-lista('Xbox')
+								+header-lista('BCP')
+						.col-md-2
+							ul.list-unstyled
+								+header-lista('Al fondo hay sitio')
+								+header-lista('Alejandro Toledo')
+								+header-lista('Alianza Lima')
+								+header-lista('Alianza Lima')
+								+header-lista('Banco de la nación')
+								+header-lista('Barack Obama')
+								+header-lista('Universidad Cesar Vallejo')
+								+header-lista('Universidad San Martin')
+								+header-lista('Barcelona')
+								+header-lista('Bayern Munich')
+								+header-lista('Bayern Munich')
+								+header-lista('BBVA')
+								+header-lista('Xbox')
+								+header-lista('BCP')
+								+header-lista('Batman')
+								+header-lista('Bayern Munich')
+								+header-lista('Bayern Munich')
+								+header-lista('BBVA')
+								+header-lista('Xbox')
+								+header-lista('BCP')
+						.col-md-2
+							ul.list-unstyled
+								+header-lista('Roger Federer')
+								+header-lista('SBS')
+								+header-lista('Scarlett Johansson')
+								+header-lista('Scotiabank')
+								+header-lista('Selena Goméz')
+								+header-lista('Spiderman')
+								+header-lista('Sporting Cristal')
+								+header-lista('Sunat')
+								+header-lista('Telefónica del Perú')
+								+header-lista('The Walking Dead')
+								+header-lista('Twitter')
+								+header-lista('Universidad Cesar Vallejo ')
+								+header-lista('Universidad San Martin')
+								+header-lista('Universitario de Deportes')
+								+header-lista('XBox')
+								+header-lista('Youtube')
+								+header-lista('Bayern Munich')
+								+header-lista('Bayern Munich')
+								+header-lista('BBVA')
+								+header-lista('Xbox')
+								+header-lista('BCP')
+						.col-md-2
+							ul.list-unstyled
+								+header-lista('Roger Federer')
+								+header-lista('SBS')
+								+header-lista('Scarlett Johansson')
+								+header-lista('Scotiabank')
+								+header-lista('Selena Goméz')
+								+header-lista('Spiderman')
+								+header-lista('Sporting Cristal')
+								+header-lista('Sunat')
+								+header-lista('Telefónica del Perú')
+								+header-lista('The Walking Dead')
+								+header-lista('Twitter')
+								+header-lista('Universidad Cesar Vallejo ')
+								+header-lista('Universidad San Martin')
+								+header-lista('Universitario de Deportes')
+								+header-lista('XBox')
+								+header-lista('Youtube')
+								+header-lista('Bayern Munich')
+								+header-lista('Bayern Munich')
+								+header-lista('BBVA')
+								+header-lista('Xbox')
+								+header-lista('BCP')
+					ul.list-unstyled.list-inline
+						+li-a-img('Diarios del PAL:Clarin','../image/border_portada.gif')
+						+li-a-img('La Tercera','../image/border_portada.gif')
+						+li-a-img('El Universal Colombia','../image/border_portada.gif')
+						+li-a-img('El Universal Venezuela','../image/border_portada.gif')
+						+li-a-img('Vanguardia','../image/border_portada.gif')
+						+li-a-img('La Prensa','../image/border_portada.gif')
+						+li-a-img('El Salvador','../image/border_portada.gif')
+						+li-a-img('La Verdad','../image/border_portada.gif')
+						+li-a-img('El Diario Libre','../image/border_portada.gif')
+						+li-a-img('El Diario de hoy','../image/border_portada.gif')
+						+li-a-img('El Colombiano','../image/border_portada.gif')
+				.col-md-2
