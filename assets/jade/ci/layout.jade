@@ -26,9 +26,17 @@ html(lang='es-PE')
 				.col-md-2
 				.col-md-8
 					block header-editorial
-						block header-logo-image
-						block header-editorial-noticia
-						block autor
+						.row
+							.col-md-4
+								block header-logo-image
+									+imagen('../image/logo-la-republica.jpg')
+							.col-md-4
+								block header-editorial-noticia
+							.col-md-4
+								block autor
+									+imagen('../image/img_editorial_text.jpg')
+									+autor('La corrupción, los origenes','Gustavo Mohme Llona')
+									+imagen('../image/img_author.jpg')
 					block header-menu
 						.row
 							ul.list-unstyled.list-inline
