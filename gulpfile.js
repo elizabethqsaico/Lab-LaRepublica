@@ -18,6 +18,6 @@ gulp.task('watch-sass',function(){
  return gulp.watch('./assets/sass/main.scss', ['sass'])});
 
 gulp.task('watch-jade',function(){
- return gulp.watch('./assets/jade/index.jade', ['jade'])});
+ return gulp.watch('./assets/jade/*.jade', ['jade'])});
 
 gulp.task('default',['watch-sass','watch-jade']);
