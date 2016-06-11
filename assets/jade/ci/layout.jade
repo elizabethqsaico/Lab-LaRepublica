@@ -7,26 +7,39 @@ html(lang='es-PE')
 				.col-md-2
 				.col-md-8
 					block header-banner
-						.div
-							block header-image
-						.row
-							.col-md-6
-								block header-list
-							.col-md-6
-								block header-redes
+						block header-image
+							+imagen('../image/banner_top.jpg')
+							block header-list
+								.row
+									.col-md-6
+										ul.list-unstyled 
+											+header-lista('LIBERO.PE')
+											+header-lista('ELPOPULAR.PE')
+											+header-lista('FUNDACION GUSTAVO MOHME LLONA')
+									.col-md-6
+										ul.list-unstyled 
+											+header-lista('SUSCRIBETE AL BOLETIN')
+
+							block header-redes
 				.col-md-2
 			.row
 				.col-md-2
 				.col-md-8
 					block header-editorial
+						block header-logo-image
+						block header-editorial-noticia
+						block autor
+					block header-menu
 						.row
-							.col-md-4
-								block header-logo-image
-							.col-md-4
-								block header-editorial-noticia
-							.col-md-4
-								block autor
-						.row
-							block header-menu
+							ul.list-unstyled.list-inline
+								+header-lista('POLITICA')
+								+header-lista('SOCIEDAD')
+								+header-lista('ELECC.REGIONALES')
+								+header-lista('DEPORTES')
+								+header-lista('CHAMPIONS L')
+								+header-lista('ESPECTÁCULOS')
+								+header-lista('ED. IMPRESA')
+								+header-lista('REGIONALES')
+								+header-lista('MAS SECCIONES')
 				.col-md-2
 
