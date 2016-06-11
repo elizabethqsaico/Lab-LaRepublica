@@ -1,1 +1,40 @@
-*{ 	outline:1px solid rgba(255,0,0,0.3); }
+// *{ 	outline:1px solid rgba(255,0,0,0.3); }
+$color-texto:#8D8383;
+.text-10{
+	font-size:10px;
+}
+.f-plomo{
+	background-color: #CECED0;
+}
+
+
+#blog{
+	ul{text-align:center;}
+	li{vertical-align:top;}
+	a{color:#111;}
+	p{color:$color-texto;}
+	
+	.art{
+		padding:1em 0.5em 0.5em;
+		margin: 0.5em;
+		width: 210px;
+		height: 200px;
+		border: 1px solid #CECED0;
+		.fecha{
+			height: 95px;
+			margin:0;
+			padding:0;
+		}
+		.autor{
+			background-color: #CECED0;
+			height:80px;
+			margin:0;
+			padding:0;
+			text-align:left;
+			img{
+				border:2px solid #fff;
+				margin: 1em 0.5em;
+			}
+		}
+	}
+}

@@ -18,3 +18,21 @@ mixin autor(titulo,nombreautor)
 	.div
 		h4= titulo
 		p= 'por:' + nombreautor
+mixin seccion(seccion,descripcion)
+	h1=seccion
+	a(href="#")=descripcion
+		i.fa.fa-angle-double-down
+mixin articulo(fecha,titulo,url,subtitulo,adelanto)
+	li
+		.row.art
+			.row.fecha.text-center
+				p.text-10=fecha
+				a(href="#")
+					h4=titulo
+			.row.autor
+				.col-xs-4
+					img.img-responsive(src= url)
+				.col-xs-8
+					a(href="#")
+						h5=subtitulo
+					p.text-10=adelanto
