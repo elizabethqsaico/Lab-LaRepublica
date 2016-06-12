@@ -31,8 +31,12 @@ mixin autor(titulo,nombreautor)
 	.div
 		h4= titulo
 		p= 'por:' + nombreautor
+//- mixin para generar los articulos de seccion blog y columnistas
 mixin seccion(seccion,descripcion)
 	h1=seccion
+	a(href="#")=descripcion
+		i.fa.fa-angle-double-down
+mixin seccion-descripcion(descripcion)
 	a(href="#")=descripcion
 		i.fa.fa-angle-double-down
 mixin articulo(fecha,titulo,url,subtitulo,adelanto)
@@ -49,3 +53,12 @@ mixin articulo(fecha,titulo,url,subtitulo,adelanto)
 					a(href="#")
 						h5=subtitulo
 					p.text-10=adelanto
+mixin columnista(url,nombre,frase)
+	li
+		.row.autor
+			.col-xs-5
+				img.img-responsive(src= url)
+			.col-xs-7
+				a(href="#")
+					h5=nombre
+				p=frase
