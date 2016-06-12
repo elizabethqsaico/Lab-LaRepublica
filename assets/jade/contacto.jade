@@ -3,3 +3,13 @@ include ci/mixin.jade
 block content
 	h1.text-center Contáctese con nosotros
 	p Llena este formulario si necesita enviarnos alguna información acerca del contenido de la página web, su funcionalidad, o si tiene alguna propuesta de información o mejora del sitio.Asi mismo, puede hacer llegar a losredactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+	form.text-center
+		input.form-control(type='text' placeholder='Nombres Completos') 
+		input.form-control(type='email' placeholder='Correo Electrónico')  
+		input.form-control(type='text' placeholder='Teléfonos')
+		p (opcional)
+		h3 Elije un destinatario
+		ul.list-unstyled
+			+li-input('radio','sugerencia para el sitio web','funcionamiento y mejoras para el sitio')
+		textarea.form-control Mensaje
+		+imagen('../image/contacto_submit_btn.jpg')

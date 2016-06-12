@@ -8,6 +8,10 @@ mixin imagen(url)
 //-			li
 //-	
 			a(href="#")= val
+mixin li-input(type, nombre, ejemplo)
+	li
+		input(type= type, radiolabel= nombre)
+		span.text-right (Ej:= ejemplo )
 mixin li-a-img(tema,imagen)
 	li
 		a(href="#")= tema
