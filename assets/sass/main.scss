@@ -6,14 +6,15 @@ $color-texto:#8D8383;
 .f-plomo{
 	background-color: #CECED0;
 }
+.t-plomo{
+	color:$color-texto;
+}
 
 
-#blog{
+#blog,#columnistas{
+	padding:1em 0;
 	ul{text-align:center;}
 	li{vertical-align:top;}
-	a{color:#111;}
-	p{color:$color-texto;}
-	
 	.art{
 		padding:1em 0.5em 0.5em;
 		margin: 0.5em;
@@ -24,6 +25,8 @@ $color-texto:#8D8383;
 			height: 95px;
 			margin:0;
 			padding:0;
+			a{color:#111;}
+			p{color:$color-texto;}
 		}
 		.autor{
 			background-color: #CECED0;
@@ -31,9 +34,11 @@ $color-texto:#8D8383;
 			margin:0;
 			padding:0;
 			text-align:left;
+			a{color:#111;}
+			p{color:$color-texto;}
 			img{
 				border:2px solid #fff;
-				margin: 1em 0.5em;
+				margin: 1em 0.3em;
 			}
 		}
 	}
