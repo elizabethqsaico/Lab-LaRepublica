@@ -53,12 +53,13 @@ mixin articulo(fecha,titulo,url,subtitulo,adelanto)
 					a(href="#")
 						h5=subtitulo
 					p.text-10=adelanto
+//- mixin para seccion columnista
 mixin columnista(url,nombre,frase)
 	li
-		.row.autor
-			.col-xs-5
+		.row.columnista
+			.col-xs-4
 				img.img-responsive(src= url)
 			.col-xs-7
 				a(href="#")
-					h5=nombre
+					h4=nombre
 				p=frase

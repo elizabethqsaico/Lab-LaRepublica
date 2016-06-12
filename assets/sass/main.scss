@@ -1,4 +1,4 @@
-// *{ 	outline:1px solid rgba(255,0,0,0.3); }
+//*{ 	outline:1px solid rgba(255,0,0,0.3); }
 $color-texto:#8D8383;
 .text-10{
 	font-size:10px;
@@ -41,5 +41,21 @@ $color-texto:#8D8383;
 				margin: 1em 0.3em;
 			}
 		}
+	}
+}
+
+#columnistas{
+	.columnista{
+		background-color: #CECED0;
+		margin: 0.2em 0.1em;
+		width: 160px;
+		height:70px;
+		img{
+			border:2px solid #fff;
+			margin: 1em auto;
+		}
+		h5{color:#111; text-align:left;font-size:10px;margin-bottom:2px;}
+		p{color:#383661; text-align:left; font-size:11px; font-weight:bold;}
+		.col-xs-7{padding:0;}
 	}
 }
