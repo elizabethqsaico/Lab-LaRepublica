@@ -8,6 +8,17 @@ mixin imagen(url)
 mixin background-image(col,url,noticia)
 	div(class= col)
 		h4= noticia
+//- mixin para divison-seccion
+mixin divisor-seccion(titulo)
+	br
+	h3.text-center= titulo
+//- mixin para home-columnista
+mixin home-columnista(url,columnista,titulo)
+	li
+		.div.text-center
+			image.img-responsive(src= url)
+			p= columnista
+			h5= titulo
 //-mixin header-lista(item)
 //-	ul.list-unstyled 
 //-		each val in [item]
