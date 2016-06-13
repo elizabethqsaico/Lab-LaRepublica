@@ -3,7 +3,7 @@ include ci/mixin.jade
 block header-editorial-noticia
 	+header-editorial('DOMINGO','HABLA LA LIDEREZA DEL NACIONALISMO')
 block content
-	#blog
+	#columnistas
 		+seccion('BLOG','LO ULTIMO EN BLOGS')
 		ul.list-unstyled.list-inline.pdt-1
 			+articulo('Lunes, 14 de Julio de 2015','El gol de la muerte','../image/img_author_columnista.jpg','Auguste Alvares Rodrics','Claro y directo')
@@ -18,6 +18,19 @@ block content
 			+articulo('Lunes, 14 de Julio de 2015','El gol de la muerte','../image/img_author_columnista.jpg','Auguste Alvares Rodrics','Claro y directo')
 			+articulo('Lunes, 14 de Julio de 2015','Dios ha muerto... tengo las manos cubiertas de sangre','../image/img_blogueros.jpg','Mirke Laver','Observador')
 			+articulo('Lunes, 14 de Julio de 2015','¿Cuál es tu queso favorito?','../image/blog_avatar_01.jpg','BLOG','Décimas cosas')
+		a.btn-rojo(href="#") Todas las columnas
+		br
+		br
+		ul.menu-abc.list-unstyled.list-inline.pdt-1
+			+header-lista('TODOS')
+			+header-lista('A B C')
+			+header-lista('D E F')
+			+header-lista('G H I')
+			+header-lista('J K L')
+			+header-lista('M N O')
+			+header-lista('P Q R S')
+			+header-lista('T U V')
+			+header-lista('W X Y Z')
 		+seccion-descripcion('TODOS LOS COLUMNISTAS')
 		ul.list-unstyled.list-inline.pdt-1
 			+columnista('../image/blog_avatar_01.jpg','Francisco Durand','Tiro al blanco')
