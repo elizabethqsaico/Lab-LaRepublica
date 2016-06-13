@@ -4,7 +4,10 @@ mixin titular-principal(titular)
 //-mixin para todas las paginas solo enviando la url
 mixin imagen(url)
 	img.img-responsive(src= url)
-
+//- mixin para crear una columna con 
+mixin background-image(col,url,noticia)
+	div(class= col)
+		h4= noticia
 //-mixin header-lista(item)
 //-	ul.list-unstyled 
 //-		each val in [item]
