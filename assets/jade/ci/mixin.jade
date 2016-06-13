@@ -1,6 +1,6 @@
 //- mixin para titular en index
 mixin titular-principal(titular)
-	h1= titular
+	h1.t-= titular
 //-mixin para todas las paginas solo enviando la url
 mixin imagen(url)
 	img.img-responsive(src= url)
@@ -27,12 +27,12 @@ mixin home-columnista(url,columnista,titulo)
 			a(href="#")= val
 //- mixin home-especiales
 mixin home-especiales(col,titulo, url, subtitulo,comentario)
-	div(class= col)
+	li
 		.home-col
-			h3.text-center= titulo
+			h4.t-rojo.text-center= titulo
 			img.img-responsive(src= url)
-			h4= subtitulo
-			p= comentario
+			h5= subtitulo
+			p.text-11= comentario
 //- mixin suscripcion 
 mixin home-suscripcion(url,titulo)
 	img.img-responsive(src= url)
@@ -48,15 +48,16 @@ mixin list-input-radio(type,args,ejemplo)
 				span (Ej:
 				span= ejemplo
 				span )
-mixin li-a-img(tema,imagen)
+mixin li-a-img(tema,imagen,tam)
 	li
-		a(href="#")= tema
-			img(src= imagen)
+		a.text-10(href="#")= tema
+			img.tam(src= imagen)
 
 mixin li-span(span, color)
 	li.li-span.mg-0.pd-0
 		a.mg-0(href="#")&attributes(attributes)
 			span.mg-0.pd-0(class= span, class= color)
+
 mixin header-lista(item)
 	li.mg-0.pd-0
 		a.t-plomo.mg-0.pd-0.text-10.font-weight-bold(href="#")= item
@@ -113,13 +114,13 @@ mixin ultimas-noticias(fecha,titulo,url,texto,numcomentarios,tipo)
 				a(href="#")
 					p=texto
 				ul.list-unstyled.list-inline
-					+li-a-img('','../image/sprites/ico-facebook.png')
-					+li-a-img('','../image/sprites/ico-twitter.png')
-					+li-a-img('','../image/sprites/ico-google-plus.png')
+					+li-a-img('','../image/sprites/ico-facebook.png','tam-1')
+					+li-a-img('','../image/sprites/ico-twitter.png','tam-1')
+					+li-a-img('','../image/sprites/ico-google-plus.png','tam-1')
 					+li-a-img('','../image/bullet.gif')
 					+li-a-img(numcomentarios ,'../image/ico_comment.png')
 					+li-a-img('','../image/bullet.gif')
-					+header-lista(tipo)
+					+li-a-img(tipo,'')
 					+li-a-img('','../image/bullet.gif')
 					+li-span('fa fa-youtube-play')
 //- mixin para los articulos de la columna derecha
