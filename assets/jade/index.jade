@@ -32,6 +32,7 @@ block content
 	//- ultimas noticias
 	.row
 		.col-sm-8
+			+seccion-descripcion('ULTIMAS NOTICIAS')
 			ul.list-unstyled.list-inline
 				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
 				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
@@ -41,27 +42,30 @@ block content
 			//-suscribete
 			.row
 			//- aweita
-			.row
+			.row.aweita.pd-medio
 				+imagen('../image/logo_aweita.jpg')
 				ul.list-unstyled.list-inline
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+				a.borde-bajo.text-10(href="#") Mas en 
+					span aweita.pe
 			//-fotos destacadas
-			.row
+			.row.destacadas.pd-medio
 				a.btn-plomo(href="#") FOTOS DESTACADAS
 				+imagen('../image/img_fotodes_prominent.jpg')
+				a(href="#") Lineas de Nazca: admiten prision preventiva de 6 meses para activistas de Greenpeace
 				ul.list-unstyled.list-inline
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 			//-especiales
-			.row
+			.row.especiales.pd-medio
 				a.btn-plomo(href="#") ESPECIALES
-				+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
-				+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
-				+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
-				+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
+				ul.list-unstyled.list-inline
+					+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
+					+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
+
 			
 
