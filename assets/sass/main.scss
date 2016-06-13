@@ -8,6 +8,7 @@ $color-amarillo: #FFBF00;
 $color-naranja: #FF4000;
 $color-gris: #DDE0E2;
 $text-14: 14px;
+$text-12: 12px;
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 .tam-1{
@@ -54,19 +55,18 @@ a:hover{text-decoration:none;}
 .list-redes p{padding-left:2px; padding-right: 5%;}
 .input-redes-div{margin-left: 2px; margin-right: 5%;}
 .input-redes{border:none; width: 50px; background: $color-gris;}
-.header-logo{vertical-align:middle;}
+.header-logo{vertical-align:middle; padding-top: 10%;}
 .editorial-autor{
-	.img-edit{ display: inline-block; }
-	.autor{display: inline-block;}
+	.img-edit{ display: inline-block; vertical-align:middle;}
+	.img-edit img{max-height: 100%;}
+	.autor{display: inline-block; width: 160px; vertical-align:middle; border-radius: 5%; border: 1px solid $color-gris; padding: 3% 1%;}
+	.autor h4,p{margin:0; padding:0; font-size: $text-12;}
 }
 .justificado{text-align:justify;}
 .left{text-align:left;}
 .right{text-align:right;}
 .enlinea{display:inline-block;}
-<<<<<<< HEAD
 .absoluta{position:absolute;}
-=======
->>>>>>> 0974003a87ac67cee245458ad4fd2c9f74a40cdf
 #blog,#columnistas{
 	h1{font-family: "Courgette", sans-serif; font-weight:700;}
 	padding:1em 0;
