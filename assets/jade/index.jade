@@ -3,153 +3,159 @@ include ci/mixin.jade
 block header-editorial-noticia
 	+header-editorial('DOMINGO','HABLA LA LIDEREZA DEL NACIONALISMO')
 block content
-	+titular-principal('GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA')
-	.text-center
-		ul.list-unstyled.list-inline
-			+li-a-img('','../image/sprites/ico-facebook.png')
-			+li-a-img('','../image/sprites/ico-twitter.png')
-			+li-a-img('','../image/sprites/ico-google-plus.png')
-			+li-a-img('Hace 12 minutos','../image/bullet.gif')
-			+li-a-img('POLITICA','')
-	.row
-		.col-md-6
-			+imagen('../image/img_grid_principal.jpg')
-			h3 JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
-		.col-md-6
-			ul.list-unstyled
-				li
-					+imagen('../image/img_grid_secundario.jpg')
-					h4 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | FOTOS
-				li
-					+imagen('../image/img_grid_especiales.jpg')
-					h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
-	//- Columnistas
-	+divisor-seccion('COLUMNISTAS')
-	ul.list-unstyled.list-inline
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-	//- Noticias secundaria
-	.row
-		.col-sm-8
-			.row
-				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
-				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
-			.row
-				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
-				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
-		.col-sm-4
-			+imagen('../image/banner-aside-home.jpg')
-	.row
-	//- ultimas noticias
-	.row
-		.col-sm-8
-			+seccion-descripcion('ULTIMAS NOTICIAS')
+	#inicio
+		+titular-principal('GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA')
+		.text-center
 			ul.list-unstyled.list-inline
-				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
-				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
-				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
-				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
-		.col-sm-4
-			//-suscribete
-			.row.mg-medio
-				+imagen('../image/img_sucribe.png')
-				.text-center
-					h3 Suscribete a nuestro boletín
-					input(type='text')
-					input(type='submit')
-			//- aweita
-			.row.aweita.pd-medio.mg-medio
-				+imagen('../image/logo_aweita.jpg')
+				+li-a-img('','../image/sprites/ico-facebook.png')
+				+li-a-img('','../image/sprites/ico-twitter.png')
+				+li-a-img('','../image/sprites/ico-google-plus.png')
+				+li-a-img('Hace 12 minutos','../image/bullet.gif')
+				+li-a-img('POLITICA','')
+		.row.noticias
+			.col-md-6
+				.div
+					+imagen('../image/img_grid_principal.jpg')
+					.capa-degradada
+						h3 JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
+			.col-md-6
+				.div
+					+imagen('../image/img_grid_secundario.jpg')
+					.capa-degradada
+						h4 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | FOTOS
+				.div
+					+imagen('../image/img_grid_especiales.jpg')
+					.capa-degradada
+						h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
+		//- Columnistas
+		.div.text-center.mg-medio
+			a.btn-rojo(href='#') COLUMNISTAS
+		ul.list-unstyled.list-inline.f-plomo.columnista.text-center
+			+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+			+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+			+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+			+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+			+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+			+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+		//- Noticias secundaria
+		.row
+			.col-sm-8.secciones
+				ul.list-unstyled.list-inline.text-center
+					+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+					+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+					+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+					+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+			.col-sm-4
+				+imagen('../image/banner-aside-home.jpg')
+		.row
+		//- ultimas noticias
+		.row
+			.col-sm-8
+				+seccion-descripcion('ULTIMAS NOTICIAS')
 				ul.list-unstyled.list-inline
-					+art('../image/img_aweita.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/img_grid_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/img_aweita.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/img_grid_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-				a.borde-bajo.text-10(href="#") Mas en 
-					span aweita.pe
-			//-fotos destacadas
-			.row.destacadas.borde-inf.pd-medio
-				a.btn-plomo(href="#") FOTOS DESTACADAS
-				+imagen('../image/img_fotodes_prominent.jpg')
-				a.t-negro(href="#") Lineas de Nazca: admiten prision preventiva de 6 meses para activistas de Greenpeace
-				ul.list-unstyled.list-inline
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-			//-especiales
-			.row.especiales.borde-inf.pd-medio
-				a.btn-plomo(href="#") ESPECIALES
-				ul.list-unstyled.list-inline
-					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
-					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
-					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
-					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
-			//-calicantura
-			.row.borde-inf.mg-medio
-				a.btn-rojo(href="#") CALICANTURA DEL DIA
-				h3 Calicanturas 30-01-2015
-				+imagen('../image/img_carlincatura_sd.jpg')
-				a.t-rojo(href="#") Todas las Calicanturas
-			//-blogueros
-			.row.borde-inf.mg-medio
-				a.btn-plomo(href="#") NUESTROS BLOGUEROS
-				ul.list-unstyled.list-inline
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
-				a.t-rojo(href="#") Todos los blog
-			//-edicion impresa
-			.row.borde-inf.mg-medio
-				a.btn-rojo(href="#") NEDICION IMPRESA
-			//- infografias
-			.row.mg-medio
-				a.btn-plomo(href="#") INFOAGRFIAS
-				ul.list-unstyled.list-inline
-					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
-					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
-			//-preguntas
-			.row.mg-medio
-			//-libero
-			.row.libero.pd-medio.mg-medio
-				+imagen('../image/logo_libero.jpg')
-				ul.list-unstyled.list-inline
-					+art('../image/img_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/img_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-				a.borde-bajo.text-10(href="#") Mas en 
-					span Libero.pe
-			//- popular
-			.row.popular.pd-medio.mg-medio
-				+imagen('../image/logo_popular.jpg')
-				ul.list-unstyled.list-inline
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-				a.borde-bajo.text-10(href="#") Mas en 
-					span elPopular.pe
-			//- wapa
-			.row.wapa.pd-medio.mg-medio
-				+imagen('../image/logo_wapa.jpg')
-				ul.list-unstyled.list-inline
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
-				a.borde-bajo.text-10(href="#") Mas en 
-					span Wapa.pe
-			//-reportero ciudadano
-			.row.mg-medio
+					+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
+					+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
+					+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
+					+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
+			.col-sm-4
+				//-suscribete
+				.row.mg-medio.suscribete
+					.text-center
+						+imagen('../image/img_sucribe.png')
+					.div.text-center
+						h3 Suscribete a nuestro boletín
+						input(type='text')
+						.text-center.mg-medio
+							a.btn-rojo.text-11(href="#") SUSCRIBETE
+				//- aweita
+				.row.aweita.pd-medio.mg-medio
+					+imagen('../image/logo_aweita.jpg')
+					ul.list-unstyled.list-inline
+						+art('../image/img_aweita.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/img_grid_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/img_aweita.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/img_grid_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+					a.borde-bajo.text-10(href="#") Mas en 
+						span aweita.pe
+				//-fotos destacadas
+				.row.destacadas.borde-inf.pd-medio
+					a.btn-plomo(href="#") FOTOS DESTACADAS
+					+imagen('../image/img_fotodes_prominent.jpg')
+					a.t-negro(href="#") Lineas de Nazca: admiten prision preventiva de 6 meses para activistas de Greenpeace
+					ul.list-unstyled.list-inline
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+				//-especiales
+				.row.especiales.borde-inf.pd-medio
+					a.btn-plomo(href="#") ESPECIALES
+					ul.list-unstyled.list-inline
+						+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
+						+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
+						+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
+						+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
+				//-calicantura
+				.row.borde-inf.mg-medio
+					a.btn-rojo(href="#") CALICANTURA DEL DIA
+					h3 Calicanturas 30-01-2015
+					+imagen('../image/img_carlincatura_sd.jpg')
+					a.t-rojo(href="#") Todas las Calicanturas
+				//-blogueros
+				.row.borde-inf.mg-medio
+					a.btn-plomo(href="#") NUESTROS BLOGUEROS
+					ul.list-unstyled.list-inline
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+						+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+					a.t-rojo(href="#") Todos los blog
+				//-edicion impresa
+				.row.borde-inf.mg-medio
+					a.btn-rojo(href="#") NEDICION IMPRESA
+				//- infografias
+				.row.mg-medio
+					a.btn-plomo(href="#") INFOAGRFIAS
+					ul.list-unstyled.list-inline
+						+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
+						+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
+				//-preguntas
+				.row.mg-medio
+				//-libero
+				.row.libero.pd-medio.mg-medio
+					+imagen('../image/logo_libero.jpg')
+					ul.list-unstyled.list-inline
+						+art('../image/img_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/img_especiales.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+					a.borde-bajo.text-10(href="#") Mas en 
+						span Libero.pe
+				//- popular
+				.row.popular.pd-medio.mg-medio
+					+imagen('../image/logo_popular.jpg')
+					ul.list-unstyled.list-inline
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+					a.borde-bajo.text-10(href="#") Mas en 
+						span elPopular.pe
+				//- wapa
+				.row.wapa.pd-medio.mg-medio
+					+imagen('../image/logo_wapa.jpg')
+					ul.list-unstyled.list-inline
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+						+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+					a.borde-bajo.text-10(href="#") Mas en 
+						span Wapa.pe
+				//-reportero ciudadano
+				.row.mg-medio
 
 
 
