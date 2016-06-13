@@ -97,7 +97,7 @@ mixin columnista(url,nombre,frase)
 				p=frase
 //- mixin ultimas noticias home
 mixin ultimas-noticias(fecha,titulo,url,texto,numcomentarios,tipo)
-	li.ultima-noticia
+	li.ultima-noticia.borde-inf
 		p.text-10=fecha
 		a(href="#")
 			h3=titulo
@@ -134,12 +134,11 @@ mixin imagen-capa(url,texto)
 //- MIXIN BLOGUEROS
 mixin blogueros(url,nombre,texto)
 	li
-		.row.pd-medio
-			.col-xs-5
+		.row.pd-medio.bloguer
+			.col-xs-3
 				+imagen(url)
-			.col-xs-7
-				a
-					p.text-10=nombre
-				a
-					h5=texto
+			.col-xs-9
+				a.text-10(href="#")=nombre
+				br
+				a(href="#")=texto
 //-mixin para reportero ciudadano

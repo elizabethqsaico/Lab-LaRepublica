@@ -55,7 +55,7 @@ block content
 				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
 		.col-sm-4
 			//-suscribete
-			.row
+			.row.mg-medio
 				+imagen('../image/img_sucribe.png')
 				.text-center
 					h3 Suscribete a nuestro boletín
@@ -72,7 +72,7 @@ block content
 				a.borde-bajo.text-10(href="#") Mas en 
 					span aweita.pe
 			//-fotos destacadas
-			.row.destacadas.pd-medio
+			.row.destacadas.borde-inf.pd-medio
 				a.btn-plomo(href="#") FOTOS DESTACADAS
 				+imagen('../image/img_fotodes_prominent.jpg')
 				a.t-negro(href="#") Lineas de Nazca: admiten prision preventiva de 6 meses para activistas de Greenpeace
@@ -81,7 +81,7 @@ block content
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 			//-especiales
-			.row.especiales.pd-medio
+			.row.especiales.borde-inf.pd-medio
 				a.btn-plomo(href="#") ESPECIALES
 				ul.list-unstyled.list-inline
 					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
@@ -89,11 +89,13 @@ block content
 					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
 					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
 			//-calicantura
-			.row
+			.row.borde-inf.mg-medio
 				a.btn-rojo(href="#") CALICANTURA DEL DIA
+				h3 Calicanturas 30-01-2015
 				+imagen('../image/img_carlincatura_sd.jpg')
+				a.t-rojo(href="#") Todas las Calicanturas
 			//-blogueros
-			.row
+			.row.borde-inf.mg-medio
 				a.btn-plomo(href="#") NUESTROS BLOGUEROS
 				ul.list-unstyled.list-inline
 					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
@@ -106,16 +108,16 @@ block content
 					+blogueros('../image/img_blogueros.jpg','Augusto Alvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
 				a.t-rojo(href="#") Todos los blog
 			//-edicion impresa
-			.row
+			.row.borde-inf.mg-medio
 				a.btn-rojo(href="#") NEDICION IMPRESA
 			//- infografias
-			.row
+			.row.mg-medio
 				a.btn-plomo(href="#") INFOAGRFIAS
 				ul.list-unstyled.list-inline
 					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
 					+imagen-capa('../image/img_especiales.jpg','Regimen laboral juvenil')
 			//-preguntas
-			.row
+			.row.mg-medio
 			//-libero
 			.row.libero.pd-medio.mg-medio
 				+imagen('../image/logo_libero.jpg')
@@ -147,7 +149,7 @@ block content
 				a.borde-bajo.text-10(href="#") Mas en 
 					span Wapa.pe
 			//-reportero ciudadano
-			.row
+			.row.mg-medio
 
 
 
