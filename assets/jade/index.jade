@@ -32,11 +32,22 @@ block content
 		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
 		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
 		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-	//- 
+	//- Noticias secundaria
+	.row
+		.col-sm-8
+			.row
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+			.row
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+		.col-sm-4
+			+imagen('../image/banner-aside-home.jpg')
 	.row
 	//- ultimas noticias
 	.row
 		.col-sm-8
+			+seccion('ÚLTIMAS NOTICIAS')
 			ul.list-unstyled.list-inline
 				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
 				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','10','ESPECTACULOS')
@@ -45,6 +56,7 @@ block content
 		.col-sm-4
 			//-suscribete
 			.row
+				
 			//- aweita
 			.row
 				+imagen('../image/logo_aweita.jpg')

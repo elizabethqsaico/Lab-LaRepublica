@@ -25,6 +25,14 @@ mixin home-columnista(url,columnista,titulo)
 //-			li
 //-	
 			a(href="#")= val
+//- mixin home-especiales
+mixin home-especiales(col,titulo, url, subtitulo,comentario)
+	div(class= col)
+		.home-col
+			h3.text-center= titulo
+			img.img-responsive(src= url)
+			h4= subtitulo
+			p= comentario
 mixin list-input-radio(type,args,ejemplo)
 	p
 		input(type= type)
