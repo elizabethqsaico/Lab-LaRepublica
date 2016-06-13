@@ -52,13 +52,15 @@ mixin li-a-img(tema,imagen,tam)
 	li
 		a.text-10(href="#")= tema
 			img.tam(src= imagen)
-mixin li-span(span)
-	li
-		a(href="#")&attributes(attributes)
-			span(class= span)
+
+mixin li-span(span, color)
+	li.li-span.mg-0.pd-0
+		a.mg-0(href="#")&attributes(attributes)
+			span.mg-0.pd-0(class= span, class= color)
+
 mixin header-lista(item)
-	li
-		a(href="#")= item
+	li.mg-0.pd-0
+		a.t-plomo.mg-0.pd-0.text-10.font-weight-bold(href="#")= item
 mixin header-editorial(titulo,subtitulo)
 	.div
 		h4= titulo
