@@ -54,6 +54,11 @@ a:hover{text-decoration:none;}
 .list-redes p{padding-left:2px; padding-right: 5%;}
 .input-redes-div{margin-left: 2px; margin-right: 5%;}
 .input-redes{border:none; width: 50px; background: $color-gris;}
+.header-logo{vertical-align:middle;}
+.editorial-autor{
+	.img-edit{ display: inline-block; }
+	.autor{display: inline-block;}
+}
 .justificado{text-align:justify;}
 .left{text-align:left;}
 .right{text-align:right;}
