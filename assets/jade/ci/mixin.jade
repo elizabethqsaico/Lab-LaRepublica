@@ -54,11 +54,11 @@ mixin li-a-img(tema,imagen)
 			img(src= imagen)
 
 mixin li-span(span, color)
-	li.li-span
-		a(href="#")&attributes(attributes)
-			span(class= span, class= color)
+	li.li-span.mg-0.pd-0
+		a.mg-0(href="#")&attributes(attributes)
+			span.mg-0.pd-0(class= span, class= color)
 mixin header-lista(item)
-	li
+	li.mg-0.pd-0
 		a.t-plomo.mg-0.pd-0.text-10.font-weight-bold(href="#")= item
 mixin header-editorial(titulo,subtitulo)
 	.div

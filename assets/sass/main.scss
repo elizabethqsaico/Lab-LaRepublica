@@ -1,4 +1,4 @@
-//*{ 	outline:1px solid rgba(255,0,0,0.3); }
+*{ 	outline:1px solid rgba(255,0,0,0.3); }
 $color-texto:#8D8383;
 $color-rojiso:#BB1313;
 $color-blanco: #fff;
@@ -6,6 +6,7 @@ $color-azul: #112E8D;
 $color-celeste: #4DB8EA;
 $color-amarillo: #FFBF00;
 $color-naranja: #FF4000;
+$color-gris: #DDE0E2;
 $text-14: 14px;
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
@@ -21,6 +22,7 @@ a:hover{text-decoration:none;}
 .t-negro{
 	color:#111;
 }
+.inline-block{display: inline-block;}
 .azul{ color: $color-azul;}
 .celeste{color: $color-celeste;}
 .rojo{ color: $color-rojiso;}
@@ -39,9 +41,13 @@ a:hover{text-decoration:none;}
 .btn-rojo{font-weight:bold;background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
 .btn-plomo{font-weight:bold;background-color:#95A6AB;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
 .borde-inf{	border-bottom:1px solid $color-texto;padding:0.5em 0;}
-.list-redes a:nth-child(1){ background: $color-rojiso; padding:0.5em;}
+.ptb-2{padding-top: 2%; padding-bottom: 2%;}
+.list-redes a:nth-child(1){ background: $color-rojiso; color: $color-blanco; margin-right: 2px; margin-left: 5px;}
 .list-redes .li-span a{background: none;}
 .list-redes .li-span span{font-size:$text-14;}
+.list-redes p{padding-left:2px; padding-right: 5%;}
+.input-redes-div{margin-left: 2px; margin-right: 5%;}
+.input-redes{border:none; width: 50px; background: $color-gris;}
 .justificado{text-align:justify;}
 .left{text-align:left;}
 .right{text-align:right;}
