@@ -52,15 +52,11 @@ mixin li-a-img(tema,imagen)
 	li
 		a(href="#")= tema
 			img(src= imagen)
-mixin list-span-color(span, args)
-	li.li-span
-		a(href="#")
-			span(class= span)
-				!=args.span
-mixin li-span(span)
+
+mixin li-span(span, color)
 	li.li-span
 		a(href="#")&attributes(attributes)
-			span(class= span)
+			span(class= span, class= color)
 mixin header-lista(item)
 	li
 		a.t-plomo.mg-0.pd-0.text-10.font-weight-bold(href="#")= item

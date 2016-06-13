@@ -21,6 +21,11 @@ a:hover{text-decoration:none;}
 .t-negro{
 	color:#111;
 }
+.azul{ color: $color-azul;}
+.celeste{color: $color-celeste;}
+.rojo{ color: $color-rojiso;}
+.amarillo{color: $color-amarillo;}
+.naranja{color: $color-naranja;}
 .mg-0{margin:0;}
 .pd-0{padding: 0;}
 .font-weight-bold{font-weight: bold;}
@@ -99,7 +104,7 @@ a:hover{text-decoration:none;}
 }
 #contacto{
 	h1{font-family: "Courgette", sans-serif; font-weight:700;}
-	..enviar{text-align:center;}
+	.enviar{text-align:center;}
 }
 
 .ultima-noticia{
