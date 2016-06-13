@@ -1,4 +1,4 @@
-*{ 	outline:1px solid rgba(255,0,0,0.3); }
+// *{ 	outline:1px solid rgba(255,0,0,0.3); }
 $color-texto:#8D8383;
 $color-rojiso:#BB1313;
 $color-blanco: #fff;
@@ -141,7 +141,7 @@ a:hover{text-decoration:none;}
 		}
 
 	}
-	.columnista{
+	.lista-columnista{
 		img{border: 2px solid #fff; margin:0.5em auto;}
 		li{
 			width:120px;
