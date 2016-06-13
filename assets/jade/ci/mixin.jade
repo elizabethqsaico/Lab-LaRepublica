@@ -21,7 +21,7 @@ mixin li-a-img(tema,imagen)
 			img(src= imagen)
 mixin li-span(span)
 	li
-		a(href="#") 
+		a(href="#")&attributes(attributes)
 			span(class= span)
 mixin header-lista(item)
 	li
@@ -37,7 +37,7 @@ mixin autor(titulo,nombreautor)
 //- mixin para generar los articulos de seccion blog y columnistas
 mixin seccion(seccion,descripcion)
 	h1=seccion
-	a(href="#")=descripcion
+	a.t-plomo(href="#")=descripcion
 		i.t-rojo.fa.fa-angle-double-down
 mixin seccion-descripcion(descripcion)
 	a.t-plomo(href="#")=descripcion
@@ -66,3 +66,24 @@ mixin columnista(url,nombre,frase)
 				a(href="#")
 					h4=nombre
 				p=frase
+//- mixin ultimas noticias home
+mixin ultimas-noticias(fecha,titulo,url,texto,tipo)
+	li.ultima-noticia
+		p.text-10=fecha
+		a(href="#")
+			h3=titulo
+		.row
+			.col-sm-4
+				img.img-responsive(src= url)
+			.col-sm-8
+				a(href="#")
+					p=texto
+				ul.list-unstyled.list-inline
+					+li-span('fa fa-facebook')(class="t-azulado")
+					+li-span('fa fa-twitter')(class="t-celeste")
+					+li-span('fa fa-google-plus')(class="t-rojo")
+					+li-span('fa fa-circle')
+					+li-span('fa fa-comment')
+					+li-span('fa fa-circle')
+					+header-lista(tipo)
+					+li-span('fa fa-circle')
