@@ -1,6 +1,5 @@
 assets/css/sass-cache/
 node_modules/
 docs/
-assets/css/main.css
+css/main.css
 assets/css/main.css.map
-*.html
