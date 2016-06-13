@@ -12,12 +12,15 @@ a:hover{text-decoration:none;}
 .t-plomo{
 	color:$color-texto;
 }
+.t-negro{
+	color:#111;
+}
 .t-rojo{color:$color-rojiso;}
 .t-azulado{color:#112E8D;}
 .t-celeste{color:#4DB8EA;}
 .pd-medio{padding:0.5em 0;}
-.btn-rojo{background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
-.btn-plomo{background-color:#95A6AB;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
+.btn-rojo{font-weight:bold;background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
+.btn-plomo{font-weight:bold;background-color:#95A6AB;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
 
 #blog,#columnistas{
 	padding:1em 0;
@@ -93,7 +96,10 @@ a:hover{text-decoration:none;}
 	.borde-bajo{ padding: 0.5; border-bottom: 3px solid #621675;}
 }
 .destacadas{
-	a{color:#111;font-weight:bold;}
+	a{font-weight:bold;}
+	li {
+		a{color:#111;font-weight:bold;}
+	}
 }
 .especiales{
 	position:absolute;

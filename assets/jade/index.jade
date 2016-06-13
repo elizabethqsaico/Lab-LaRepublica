@@ -24,14 +24,9 @@ block content
 					+imagen('../image/img_grid_especiales.jpg')
 					h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
 	//- Columnistas
-	+divisor-seccion('COLUMNISTAS')
-	ul.list-unstyled.list-inline
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
-		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+	.row
+		.col-sm-8
+		.col-sm-4
 	//- 
 	.row
 	//- ultimas noticias
@@ -60,7 +55,7 @@ block content
 			.row.destacadas.pd-medio
 				a.btn-plomo(href="#") FOTOS DESTACADAS
 				+imagen('../image/img_fotodes_prominent.jpg')
-				a(href="#") Lineas de Nazca: admiten prision preventiva de 6 meses para activistas de Greenpeace
+				a.t-negro(href="#") Lineas de Nazca: admiten prision preventiva de 6 meses para activistas de Greenpeace
 				ul.list-unstyled.list-inline
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
 					+art('../image/fotogaleria_main.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
@@ -70,7 +65,7 @@ block content
 				a.btn-plomo(href="#") ESPECIALES
 				ul.list-unstyled.list-inline
 					+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
-					+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
+
 
 			
 
