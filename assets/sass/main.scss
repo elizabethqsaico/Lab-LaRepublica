@@ -1,6 +1,8 @@
 //*{ 	outline:1px solid rgba(255,0,0,0.3); }
 $color-texto:#8D8383;
 $color-rojiso:#BB1313;
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
 .text-10{
 	font-size:10px;
 }
@@ -76,6 +78,29 @@ $color-rojiso:#BB1313;
 	padding:0.5em;
 	text-align:left;
 	a{color:#111;}
-	a:hover{text-decoration:none;}
 	border-bottom:1px solid $color-texto;
+}
+.aweita{
+	border:1px solid $color-texto;
+	padding:0.5em;
+	text-align:center;
+	img{margin:auto;}
+	li{
+		a{color:#111;font-weight:bold; text-align:left;}
+	}
+	a{color:#111;}
+	span {color:$color-rojiso;}
+	.borde-bajo{ padding: 0.5; border-bottom: 3px solid #621675;}
+}
+.destacadas{
+	a{color:#111;font-weight:bold;}
+}
+.especiales{
+	position:absolute;
+	.capa{
+		position:relative;
+		background-color:rgba(185, 184, 192, 0.8);
+		bottom:30px;
+		a{color:#111;font-weight:bold;}
+	}
 }
