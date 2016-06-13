@@ -208,3 +208,24 @@ a:hover{text-decoration:none;}
 		}
 	}
 }
+.listaespeciales a{
+	left:40px;
+	position:relative;
+	bottom:40px;
+	background-color:rgba(255,255,255,0.5);
+	color:#000;
+	padding:10px 40px;
+	text-align:center;
+	font-weight:bold;
+
+}
+.listaespeciales a:nth-child(4){
+	left:40px;
+	position:relative;
+	bottom:40px;
+	background-color:rgba(255,255,255,0.5);
+	color:#000;
+	padding:10px 20px;
+	text-align:center;
+
+}
