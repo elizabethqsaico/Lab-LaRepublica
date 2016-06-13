@@ -38,10 +38,10 @@ mixin autor(titulo,nombreautor)
 mixin seccion(seccion,descripcion)
 	h1=seccion
 	a(href="#")=descripcion
-		i.fa.fa-angle-double-down
+		i.t-rojo.fa.fa-angle-double-down
 mixin seccion-descripcion(descripcion)
-	a(href="#")=descripcion
-		i.fa.fa-angle-double-down
+	a.t-plomo(href="#")=descripcion
+		i.t-rojo.fa.fa-angle-double-down
 mixin articulo(fecha,titulo,url,subtitulo,adelanto)
 	li
 		.row.art
