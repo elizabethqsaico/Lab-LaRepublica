@@ -33,6 +33,10 @@ mixin home-especiales(col,titulo, url, subtitulo,comentario)
 			img.img-responsive(src= url)
 			h4= subtitulo
 			p= comentario
+//- mixin suscripcion 
+mixin home-suscripcion(url,titulo)
+	img.img-responsive(src= url)
+	.text-center
 mixin list-input-radio(type,args,ejemplo)
 	p
 		input(type= type)
