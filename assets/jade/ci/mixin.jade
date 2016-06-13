@@ -118,7 +118,7 @@ mixin art(url,contenido)
 	li
 		.row.pd-medio
 			.col-xs-5
-				img.img-responsive(src= url)
+				+imagen(url)
 			.col-xs-7
 				a
 					p.text-10=contenido
@@ -127,3 +127,15 @@ mixin imagen-capa(url,texto)
 		+imagen(url)
 		.div.capa
 			a.text-10(href="#")=texto
+//- MIXIN BLOGUEROS
+mixin blogueros(url,nombre,texto)
+	li
+		.row.pd-medio
+			.col-xs-5
+				+imagen(url)
+			.col-xs-7
+				a
+					p.text-10=nombre
+				a
+					h5=texto
+//-mixin para reportero ciudadano
