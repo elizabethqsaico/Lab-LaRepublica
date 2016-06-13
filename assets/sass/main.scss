@@ -18,6 +18,7 @@ a:hover{text-decoration:none;}
 .t-rojo{color:$color-rojiso;}
 .t-azulado{color:#112E8D;}
 .t-celeste{color:#4DB8EA;}
+.mg-medio{margin:0.5em 0em;}
 .pd-medio{padding:0.5em 0;}
 .btn-rojo{font-weight:bold;background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
 .btn-plomo{font-weight:bold;background-color:#95A6AB;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
@@ -83,8 +84,8 @@ a:hover{text-decoration:none;}
 	a{color:#111;}
 	border-bottom:1px solid $color-texto;
 }
-.aweita{
-	border:1px solid $color-texto;
+.aweita,.popular,.wapa,.libero{
+	border:1px solid #DAD3D3;
 	padding:0.5em;
 	text-align:center;
 	img{margin:auto;}
