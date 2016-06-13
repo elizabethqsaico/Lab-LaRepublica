@@ -27,6 +27,8 @@ a:hover{text-decoration:none;}
 .t-rojo{color:$color-rojiso;}
 .t-azulado{color:#112E8D;}
 .t-celeste{color:#4DB8EA;}
+.t-courguete{font-family: "Courgette", sans-serif;}
+.t-oswald{font-family: "Oswald", sans-serif;}
 .mg-medio{margin:0.5em 0em;}
 .pd-medio{padding:0.5em 0;}
 .btn-rojo{font-weight:bold;background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
@@ -35,7 +37,12 @@ a:hover{text-decoration:none;}
 .list-redes a:nth-child(1){ background: $color-rojiso; padding:0.5em;}
 .list-redes .li-span a{background: none;}
 .list-redes .li-span span{font-size:$text-14;}
+.justificado{text-align:justify;}
+.left{text-align:left;}
+.right{text-align:right;}
+.enlinea{display:inline-block;}
 #blog,#columnistas{
+	h1{font-family: "Courgette", sans-serif; font-weight:700;}
 	padding:1em 0;
 	ul{text-align:center;}
 	li{vertical-align:top;}
@@ -70,15 +77,16 @@ a:hover{text-decoration:none;}
 
 #columnistas{
 	.menu-abc{
-		padding: 0.5em;
+		margin: 0.5em 0;
+		padding: 0.7em;
 		background-color:$color-rojiso;
 		a{color:#fff; text-decoration:none; padding:0.2em 0.8em;border-radius:30px;}
 		a:hover{text-decoration:none; background-color:#E71111;}
 	}
 	.columnista{
 		background-color: #CECED0;
-		margin: 0.2em 0.02em;
-		width: 160px;
+		margin: 2px 1px;
+		width: 175px;
 		height:60px;
 		img{
 			border:2px solid #fff;
@@ -88,6 +96,10 @@ a:hover{text-decoration:none;}
 		p{color:#383661; text-align:left; font-size:11px; font-weight:bold;}
 		.col-xs-7{padding:0;}
 	}
+}
+#contacto{
+	h1{font-family: "Courgette", sans-serif; font-weight:700;}
+	..enviar{text-align:center;}
 }
 
 .ultima-noticia{

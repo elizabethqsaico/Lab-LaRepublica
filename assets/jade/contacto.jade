@@ -3,20 +3,30 @@ include ci/mixin.jade
 block header-editorial-noticia
 	+header-editorial('DOMINGO','HABLA LA LIDEREZA DEL NACIONALISMO')
 block content
-	h1.text-center Contáctese con nosotros
-	p Llena este formulario si necesita enviarnos alguna información acerca del contenido de la página web, su funcionalidad, o si tiene alguna propuesta de información o mejora del sitio.Asi mismo, puede hacer llegar a losredactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
-	form
-		input.text-center.form-control(type='text' placeholder='Nombres Completos') 
-		input.text-center.form-control(type='email' placeholder='Correo Electrónico')  
-		input.text-center.form-control(type='text' placeholder='Teléfonos')
-		p (opcional)
-		h3 Elije un destinatario
-		ul.list-unstyled
-			+list-input-radio( 'radio',{radiolabel: 'Sugerencia para el sitio web'},'funcionamiento y mejoras para el sitio')
-			+list-input-radio( 'radio',{radiolabel: 'Dirección periodística'},'Sugerencia para la nota de prensa')
-			+list-input-radio( 'radio',{radiolabel: 'Dirección comercial'},'Publicidad en diarios o sitios web')
-			+list-input-radio( 'radio',{radiolabel: 'Cartas al director'},'denuncias, comentarios e impresione')
-			+list-input-radio( 'radio',{radiolabel: 'Promociones y producto del diario'},'fPromocione, tablet, etc')
-			+list-input-radio( 'radio',{radiolabel: 'Archivo periodístico'},'Ediciones impresa/fotos')
-		textarea.form-control Mensaje
-		+imagen('../image/contacto_submit_btn.jpg')
+	#contacto
+		h1.text-center Contáctese con nosotros
+		p.justificado Llena este formulario si necesita enviarnos alguna información acerca del contenido de la página web, su funcionalidad, o si tiene alguna propuesta de información o mejora del sitio.Asi mismo, puede hacer llegar a losredactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+		.row
+			.col-md-2
+			.col-md-8
+				form
+					input.text-center.form-control.mg-medio.f-plomo.left(type='text' placeholder='Nombres Completos') 
+					input.text-center.form-control.mg-medio.f-plomo.left(type='email' placeholder='Correo Electrónico')  
+					input.text-center.form-control.mg-medio.f-plomo.left(type='text' placeholder='Teléfonos')
+					p (opcional)
+					h3 Elije un destinatario
+					ul.list-unstyled
+						+list-input-radio( 'radio',{radiolabel: 'Sugerencia para el sitio web'},'funcionamiento y mejoras para el sitio')
+						+list-input-radio( 'radio',{radiolabel: 'Dirección periodística'},'Sugerencia para la nota de prensa')
+						+list-input-radio( 'radio',{radiolabel: 'Dirección comercial'},'Publicidad en diarios o sitios web')
+						+list-input-radio( 'radio',{radiolabel: 'Cartas al director'},'denuncias, comentarios e impresione')
+						+list-input-radio( 'radio',{radiolabel: 'Promociones y producto del diario'},'fPromocione, tablet, etc')
+						+list-input-radio( 'radio',{radiolabel: 'Archivo periodístico'},'Ediciones impresa/fotos')
+					textarea.form-control.mg-medio.f-plomo(rows="6" required) Mensaje
+					br
+					.div.enviar.text-center
+						a(href="#")
+							+imagen('../image/contacto_submit_btn.jpg')
+					br
+					br
+			.col-md-2
