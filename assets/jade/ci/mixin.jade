@@ -62,12 +62,12 @@ mixin header-lista(item)
 	li.mg-0.pd-0
 		a.t-plomo.mg-0.pd-0.text-10.font-weight-bold(href="#")= item
 mixin header-editorial(titulo,subtitulo)
-	.text-center
+	.div
 		h4= titulo
 		p= subtitulo
 mixin autor(titulo,nombreautor)
 	.autor
-		h4.font-weight-bold= titulo
+		h4= titulo
 		p= 'por:' + nombreautor
 //- mixin para generar los articulos de seccion blog y columnistas
 mixin seccion(seccion,descripcion)
@@ -137,6 +137,16 @@ mixin imagen-capa(url,texto)
 		+imagen(url)
 		.div.capa
 			a.text-10(href="#")=texto
+//-edicion impresa
+mixin edicion-impresa(url,nombre,texto)
+	li
+		.row.pd-medio.impreso
+			.col-xs-5
+				+imagen(url)
+			.col-xs-7
+				a.t.negro(href="#")=nombre
+				br
+				a.t-rojo(href="#")=texto
 //- MIXIN BLOGUEROS
 mixin blogueros(url,nombre,texto)
 	li

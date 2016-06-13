@@ -8,7 +8,6 @@ $color-amarillo: #FFBF00;
 $color-naranja: #FF4000;
 $color-gris: #DDE0E2;
 $text-14: 14px;
-$text-12: 12px;
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 .tam-1{
@@ -55,12 +54,10 @@ a:hover{text-decoration:none;}
 .list-redes p{padding-left:2px; padding-right: 5%;}
 .input-redes-div{margin-left: 2px; margin-right: 5%;}
 .input-redes{border:none; width: 50px; background: $color-gris;}
-.header-logo{vertical-align:middle; padding-top: 10%;}
+.header-logo{vertical-align:middle;}
 .editorial-autor{
-	.img-edit{ display: inline-block; vertical-align:middle;}
-	.img-edit img{max-height: 100%;}
-	.autor{display: inline-block; width: 160px; vertical-align:middle; border-radius: 5%; border: 1px solid $color-gris; padding: 3% 1%;}
-	.autor h4,p{margin:0; padding:0; font-size: $text-12;}
+	.img-edit{ display: inline-block; }
+	.autor{display: inline-block;}
 }
 .justificado{text-align:justify;}
 .left{text-align:left;}
@@ -210,25 +207,4 @@ a:hover{text-decoration:none;}
 			margin:0;
 		}
 	}
-}
-.listaespeciales a{
-	left:40px;
-	position:relative;
-	bottom:40px;
-	background-color:rgba(255,255,255,0.5);
-	color:#000;
-	padding:10px 40px;
-	text-align:center;
-	font-weight:bold;
-
-}
-.listaespeciales a:nth-child(4){
-	left:40px;
-	position:relative;
-	bottom:40px;
-	background-color:rgba(255,255,255,0.5);
-	color:#000;
-	padding:10px 20px;
-	text-align:center;
-
 }
