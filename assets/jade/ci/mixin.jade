@@ -38,12 +38,16 @@ mixin home-suscripcion(url,titulo)
 	img.img-responsive(src= url)
 	.text-center
 mixin list-input-radio(type,args,ejemplo)
-	p
-		input(type= type)
-		!= args.radiolabel
-		span (Ej:
-		span= ejemplo
-		span )
+	.row
+		.col-md-6
+			p
+				input(type= type)
+				!= args.radiolabel
+		.col-md-6.right
+			p.text-10
+				span (Ej:
+				span= ejemplo
+				span )
 mixin li-a-img(tema,imagen)
 	li
 		a(href="#")= tema
@@ -103,7 +107,7 @@ mixin ultimas-noticias(fecha,titulo,url,texto,numcomentarios,tipo)
 			h3=titulo
 		.row
 			.col-sm-4
-				img.img-responsive(src= url)
+				+imagen(url)
 			.col-sm-8
 				a(href="#")
 					p=texto
