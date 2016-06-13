@@ -1,6 +1,12 @@
 //*{ 	outline:1px solid rgba(255,0,0,0.3); }
 $color-texto:#8D8383;
 $color-rojiso:#BB1313;
+$color-blanco: #fff;
+$color-azul: #112E8D;
+$color-celeste: #4DB8EA;
+$color-amarillo: #FFBF00;
+$color-naranja: #FF4000;
+$text-14: 14px;
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 .text-10{
@@ -15,6 +21,9 @@ a:hover{text-decoration:none;}
 .t-negro{
 	color:#111;
 }
+.mg-0{margin:0;}
+.pd-0{padding: 0;}
+.font-weight-bold{font-weight: bold;}
 .t-rojo{color:$color-rojiso;}
 .t-azulado{color:#112E8D;}
 .t-celeste{color:#4DB8EA;}
@@ -23,7 +32,9 @@ a:hover{text-decoration:none;}
 .btn-rojo{font-weight:bold;background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
 .btn-plomo{font-weight:bold;background-color:#95A6AB;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:2em auto;}
 .borde-inf{	border-bottom:1px solid $color-texto;padding:0.5em 0;}
-
+.list-redes a:nth-child(1){ background: $color-rojiso; padding:0.5em;}
+.list-redes .li-span a{background: none;}
+.list-redes .li-span span{font-size:$text-14;}
 #blog,#columnistas{
 	padding:1em 0;
 	ul{text-align:center;}
