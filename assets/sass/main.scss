@@ -58,10 +58,7 @@ a:hover{text-decoration:none;}
 .left{text-align:left;}
 .right{text-align:right;}
 .enlinea{display:inline-block;}
-<<<<<<< HEAD
 .absoluta{position:absolute;}
-=======
->>>>>>> 0974003a87ac67cee245458ad4fd2c9f74a40cdf
 #blog,#columnistas{
 	h1{font-family: "Courgette", sans-serif; font-weight:700;}
 	padding:1em 0;
@@ -151,7 +148,8 @@ a:hover{text-decoration:none;}
 			width:230px;
 			margin: 0.5em 0;
 			.home-col{padding:0.5em 0; border: 1px solid $color-texto;}
-			h5{position:relative; bottom:5em;color:#fff;text-align:left}
+			h5{position:relative; bottom:5em;color:#fff;float:left;}
+			p{position:relative; float:left;bottom:5em;margin:0;padding:0;}
 					
 		}
 	}
