@@ -66,10 +66,10 @@ mixin autor(titulo,nombreautor)
 //- mixin para generar los articulos de seccion blog y columnistas
 mixin seccion(seccion,descripcion)
 	h1=seccion
-	a.t-plomo(href="#")=descripcion
+	a.t-plomo.t-oswald(href="#")=descripcion
 		i.t-rojo.fa.fa-angle-double-down
 mixin seccion-descripcion(descripcion)
-	a.t-plomo(href="#")=descripcion
+	a.t-plomo.t-oswald(href="#")=descripcion
 		i.t-rojo.fa.fa-angle-double-down
 mixin articulo(fecha,titulo,url,subtitulo,adelanto)
 	li
@@ -89,7 +89,7 @@ mixin articulo(fecha,titulo,url,subtitulo,adelanto)
 mixin columnista(url,nombre,frase)
 	li
 		.row.columnista
-			.col-xs-4
+			.col-xs-5
 				+imagen(url)
 			.col-xs-7
 				a(href="#")
