@@ -54,7 +54,7 @@ mixin articulo(fecha,titulo,url,subtitulo,adelanto)
 					h4=titulo
 			.row.autor
 				.col-xs-5
-					img.img-responsive(src= url)
+					+imagen(url)
 				.col-xs-7
 					a(href="#")
 						h5=subtitulo
@@ -64,7 +64,7 @@ mixin columnista(url,nombre,frase)
 	li
 		.row.columnista
 			.col-xs-4
-				img.img-responsive(src= url)
+				+imagen(url)
 			.col-xs-7
 				a(href="#")
 					h4=nombre
@@ -77,7 +77,7 @@ mixin ultimas-noticias(fecha,titulo,url,texto,tipo)
 			h3=titulo
 		.row
 			.col-sm-4
-				img.img-responsive(src= url)
+				+imagen(url)
 			.col-sm-8
 				a(href="#")
 					p=texto
@@ -90,3 +90,17 @@ mixin ultimas-noticias(fecha,titulo,url,texto,tipo)
 					+li-span('fa fa-circle')
 					+header-lista(tipo)
 					+li-span('fa fa-circle')
+//- mixin para los articulos de la columna derecha
+mixin art(url,contenido)
+	li
+		.row
+			.col-xs-5
+				img.img-responsive(src= url)
+			.col-xs-7
+				a
+					p=contenido
+mixin imagen-capa(url,texto)
+	+imagen(url)
+	.div.capa
+		a(href="#")
+			p=texto
