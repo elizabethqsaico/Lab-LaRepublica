@@ -11,6 +11,8 @@ $color-rojiso:#BB1313;
 	color:$color-texto;
 }
 .t-rojo{color:$color-rojiso;}
+.t-azulado{color:#112E8D;}
+.t-celeste{color:#4DB8EA;}
 .pd-medio{padding:0.5em 0;}
 .btn-rojo{background-color:$color-rojiso;color:#fff;padding: 0.5em 1em;text-decoration:none;margin:1em auto;}
 
@@ -56,7 +58,7 @@ $color-rojiso:#BB1313;
 	}
 	.columnista{
 		background-color: #CECED0;
-		margin: 0.2em 0.1em;
+		margin: 0.2em 0.02em;
 		width: 160px;
 		height:60px;
 		img{
@@ -67,4 +69,12 @@ $color-rojiso:#BB1313;
 		p{color:#383661; text-align:left; font-size:11px; font-weight:bold;}
 		.col-xs-7{padding:0;}
 	}
+}
+
+.ultima-noticia{
+	padding:0.5em;
+	text-align:left;
+	a{color:#111;}
+	a:hover{text-decoration:none;}
+	border-bottom:1px solid $color-texto;
 }
