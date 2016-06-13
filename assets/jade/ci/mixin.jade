@@ -4,7 +4,10 @@ mixin titular-principal(titular)
 //-mixin para todas las paginas solo enviando la url
 mixin imagen(url)
 	img.img-responsive(src= url)
-
+//- mixin para crear una columna con 
+mixin background-image(col,url,noticia)
+	div(class= col)
+		h4= noticia
 //-mixin header-lista(item)
 //-	ul.list-unstyled 
 //-		each val in [item]
@@ -70,26 +73,27 @@ mixin columnista(url,nombre,frase)
 					h4=nombre
 				p=frase
 //- mixin ultimas noticias home
-mixin ultimas-noticias(fecha,titulo,url,texto,tipo)
+mixin ultimas-noticias(fecha,titulo,url,texto,numcomentarios,tipo)
 	li.ultima-noticia
 		p.text-10=fecha
 		a(href="#")
 			h3=titulo
 		.row
 			.col-sm-4
-				+imagen(url)
+				img.img-responsive(src= url)
 			.col-sm-8
 				a(href="#")
 					p=texto
 				ul.list-unstyled.list-inline
-					+li-span('fa fa-facebook')(class="t-azulado")
-					+li-span('fa fa-twitter')(class="t-celeste")
-					+li-span('fa fa-google-plus')(class="t-rojo")
-					+li-span('fa fa-circle')
-					+li-span('fa fa-comment')
-					+li-span('fa fa-circle')
+					+li-a-img('','../image/sprites/ico-facebook.png')
+					+li-a-img('','../image/sprites/ico-twitter.png')
+					+li-a-img('','../image/sprites/ico-google-plus.png')
+					+li-a-img('','../image/bullet.gif')
+					+li-a-img(numcomentarios ,'../image/ico_comment.png')
+					+li-a-img('','../image/bullet.gif')
 					+header-lista(tipo)
-					+li-span('fa fa-circle')
+					+li-a-img('','../image/bullet.gif')
+					+li-span('fa fa-youtube-play')
 //- mixin para los articulos de la columna derecha
 mixin art(url,contenido)
 	li
