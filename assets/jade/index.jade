@@ -24,10 +24,25 @@ block content
 					+imagen('../image/img_grid_especiales.jpg')
 					h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
 	//- Columnistas
+	+divisor-seccion('COLUMNISTAS')
+	ul.list-unstyled.list-inline
+		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+		+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
+	//- Noticias secundaria
 	.row
 		.col-sm-8
+			.row
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+			.row
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+				+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
 		.col-sm-4
-	//- 
+			+imagen('../image/banner-aside-home.jpg')
 	.row
 	//- ultimas noticias
 	.row
@@ -41,6 +56,7 @@ block content
 		.col-sm-4
 			//-suscribete
 			.row
+				
 			//- aweita
 			.row.aweita.pd-medio
 				+imagen('../image/logo_aweita.jpg')
@@ -63,8 +79,7 @@ block content
 			//-especiales
 			.row.especiales.pd-medio
 				a.btn-plomo(href="#") ESPECIALES
-				ul.list-unstyled.list-inline
-					+imagen-capa('../image/img_especiales_aside.jpg','Regimen Laboral Juvenil')
+
 
 
 			
