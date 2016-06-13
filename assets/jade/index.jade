@@ -3,5 +3,20 @@ include ci/mixin.jade
 block header-editorial-noticia
 	+header-editorial('DOMINGO','HABLA LA LIDEREZA DEL NACIONALISMO')
 block content
-	+titular-principal('GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA')
-	+
+	.row
+		+titular-principal('GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA')
+	//- Columnistas
+	.row
+		.col-sm-8
+		.col-sm-4
+	//- 
+	.row
+	//- ultimas noticias
+	.row
+		.col-sm-8
+			ul.list-unstyled.list-inline
+				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','ESPECTACULOS')
+				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','ESPECTACULOS')
+				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','ESPECTACULOS')
+				+ultimas-noticias('Hace 1 hora 12 min','Emma Watson protagonizara "La bella y la bestia"','../image/img_news.jpg',' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil mollitia possimus distinctio maiores perspiciatis dignissimos maxime dolorem quam...','ESPECTACULOS')
+		.col-sm-4
