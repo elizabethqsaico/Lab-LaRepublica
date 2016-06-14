@@ -6,26 +6,22 @@ block content
 	#inicio
 		+titular-principal('GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA')
 		.text-center
-			ul.list-unstyled.list-inline
+			ul.list-unstyled.list-inline.header-titular
 				+li-a-img('','../image/sprites/ico-facebook.png')
 				+li-a-img('','../image/sprites/ico-twitter.png')
 				+li-a-img('','../image/sprites/ico-google-plus.png')
 				+li-a-img('Hace 12 minutos','../image/bullet.gif')
 				+li-a-img('POLITICA','')
 		.row.noticias
-			.col-md-6
-				.div
-					+imagen('../image/img_grid_principal.jpg')
-					.capa-degradada
-						h3 JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
-			.col-md-6
-				.div
-					+imagen('../image/img_grid_secundario.jpg')
-					.capa-degradada
+			.capa-degradada
+				.col-md-6.principal
+					h3 JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
+			.capa-degradada
+				.col-md-6
+					.secundario-1
 						h4 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | FOTOS
-				.div
-					+imagen('../image/img_grid_especiales.jpg')
-					h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
+					.secundario-2
+						h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
 		//- Columnistas
 		.row
 			.div.text-center.mg-medio

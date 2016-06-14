@@ -217,6 +217,9 @@ a:hover {
 .tema-dia img {
   margin-left: 2px; }
 
+.header-titular a {
+  color: #8D8383; }
+
 .justificado {
   text-align: justify; }
 
@@ -316,22 +319,29 @@ a:hover {
   text-align: center; }
 
 #inicio h1, #inicio h3, #inicio h4 {
-  font-family: "Courgette", sans-serif;
+  font-family: "TP Sans", sans-serif;
   font-weight: 700;
   text-align: center; }
 
+#inicio .noticias {
+  font-family: "PT Sans", sans-serif; }
+
 #inicio .noticias h3, #inicio .noticias h4 {
-  position: relative;
-  bottom: 5em;
+  padding-top: 75%;
   color: #fff;
-  text-align: left; }
+  text-align: left;
+  padding-left: 4%;
+  padding-right: 2%; }
 
 #inicio .noticias .capa-degradada {
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
-  top: 0; }
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#inicio .noticias .principal {
+  background: url(../image/img_grid_principal.jpg);
+  background-size: cover;
+  background-position: top;
+  margin: 0;
+  padding: 0; }
 
 #inicio .lista-columnista img {
   border: 2px solid #fff;
