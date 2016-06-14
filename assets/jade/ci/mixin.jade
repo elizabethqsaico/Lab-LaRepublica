@@ -175,14 +175,18 @@ mixin pregunta-hoy(pregunta)
 		.div.text-center
 			a.t-rojo(href="#") Ver los resultados
 //- mixin  pregunta de ayer
-mixin pregunta-ayer(pregunta)
+mixin pregunta-ayer(pregunta,num1,num2)
 	.div.pregunta-dia
 		h4 La pregunta de Ayer
 		p= pregunta
-		.div
+		.div.progress
+			.div(class='progress-bar progress-bar-success' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 55%') 55%
+		.div.progress
+			.div(class='progress-bar progress-bar-warning' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 25%') 25%
 			
 		.div.text-center
-			a.t-rojo(href="#") Ver preguntas pasadas
+			a.t-rojo(href='#') Ver preguntas pasadas
+
 mixin input-radio(type,args)
 	.div.text-center
 		p
