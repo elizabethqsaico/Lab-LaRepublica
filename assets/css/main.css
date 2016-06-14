@@ -325,6 +325,10 @@ a:hover {
   position: relative;
   top: 20px; }
 
+.tittle-especial {
+  position: relative;
+  top: 20px; }
+
 #inicio h1, #inicio h4 {
   font-family: "TP Sans", sans-serif;
   font-weight: 700;
@@ -409,15 +413,18 @@ a:hover {
     padding: 0; }
 
 #inicio .suscribete {
-  background-image: url(../image/puntos.png);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url(../image/trama_square.jpg);
+  background-size: cover; }
   #inicio .suscribete .div {
     background-color: #fff;
     margin: 1em;
     padding: 0.5em; }
   #inicio .suscribete .img {
     margin: auto; }
+
+#inicio .icon-center img {
+  position: relative;
+  left: 5.5em; }
 
 #inicio .ultima-noticia {
   padding: 0.5em;
@@ -452,8 +459,12 @@ a:hover {
   font-weight: bold; }
 
 #inicio .especiales .capa {
-  background-color: rgba(185, 184, 192, 0.8);
-  bottom: 30px; }
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 30px;
+  position: relative;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center; }
   #inicio .especiales .capa a {
     color: #111;
     font-weight: bold; }
@@ -467,3 +478,7 @@ a:hover {
 #inicio .blogueros .bloguer {
   padding: 0;
   margin: 0; }
+
+.footer a {
+  color: #8D8383;
+  font-size: 10px; }

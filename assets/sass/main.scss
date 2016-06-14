@@ -162,6 +162,7 @@ a:hover{text-decoration:none;}
 	.enviar{text-align:center;}
 }
 .tittle-columnista{position:relative; top:20px;}
+.tittle-especial{position:relative; top:20px;}
 #inicio{
 	h1,h4{font-family: "TP Sans", sans-serif; font-weight:700; text-align:center;}
 	.noticias{font-family: "PT Sans", sans-serif;}
@@ -197,11 +198,14 @@ a:hover{text-decoration:none;}
 		}
 	}
 	.suscribete{
-		background-image:url(../image/puntos.png);
+		background-image:url(../image/trama_square.jpg);
 		background-size:cover;
-		background-repeat:no-repeat;
 		.div{background-color:#fff; margin:1em;padding:0.5em;}
 		.img{margin:auto;}	
+	}
+	.icon-center img{
+		position: relative;
+		left: 5.5em;
 	}
 	.ultima-noticia{
 		padding:0.5em;
@@ -231,8 +235,12 @@ a:hover{text-decoration:none;}
 
 		.capa{
 
-			background-color:rgba(185, 184, 192, 0.8);
+			background-color:rgba(255, 255, 255, 0.7);
 			bottom:30px;
+			position: relative;
+			margin-left:2%;
+			margin-right: 2%;
+			text-align: center;
 			a{color:#111;font-weight:bold;}
 		}
 	}
@@ -246,3 +254,4 @@ a:hover{text-decoration:none;}
 		}
 	}
 }
+.footer a{color:$color-texto; font-size:10px;}
