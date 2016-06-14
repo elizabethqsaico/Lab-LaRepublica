@@ -6,29 +6,34 @@ html(lang='es-PE')
 			//-header
 			.row.f-plomo
 				.col-md-2
-				.col-md-8
+				.col-md-8.pd-0
 					block header-banner
 						block header-image
-							+imagen('../image/banner_top.jpg')
-						.row
-							block header-list
-								.col-sm-6.mg-0.pd-0
-									ul.list-unstyled.list-inline.mg-0.pd-0.ptb-2
-										+header-lista('LIBERO.PE')
-										+header-lista('ELPOPULAR.PE')
-										+header-lista('FUNDACION GUSTAVO MOHME LLONA')
-							block header-redes
-								.col-sm-6.mg-0.pd-0
-									ul.list-unstyled.list-inline.list-redes.mg-0.pd-0.inline-block.ptb-2
-										+header-lista('SUSCRIBETE AL BOLETIN')
-										+li-span('fa fa-facebook','azul')
-										+li-span('fa fa-twitter','celeste')
-										+li-span('fa fa-google-plus','rojo')
-										+li-span('fa fa-envelope','amarillo')
-										+li-span('fa fa-rss','naranja')
-									.pull-right.inline-block.ptb-2.input-redes-div
-										input.input-redes.text-10(placeholder="BUSCAR")
-										span.fa.fa-search.text-10
+							.header-image.pdt-2
+								+imagen('../image/banner_top.jpg')
+				.col-md-2
+			.row.f-plomo
+				.col-md-2
+				.col-md-8
+					.row.t-pt-sans.text-11
+						block header-list
+							.col-sm-6.mg-0.pd-0
+								ul.list-unstyled.list-inline.mg-0.pd-0.ptb-2
+									+header-lista('LIBERO.PE')
+									+header-lista('ELPOPULAR.PE')
+									+header-lista('FUNDACION GUSTAVO MOHME LLONA')
+						block header-redes
+							.col-sm-6.mg-0.pd-0
+								ul.list-unstyled.list-inline.list-redes.mg-0.pd-0.inline-block.ptb-2
+									+header-lista('SUSCRIBETE AL BOLETIN')
+									+li-span('fa fa-facebook','azul')
+									+li-span('fa fa-twitter','celeste')
+									+li-span('fa fa-google-plus','rojo')
+									+li-span('fa fa-envelope','amarillo')
+									+li-span('fa fa-rss','naranja')
+								.pull-right.inline-block.ptb-2.input-redes-div
+									input.input-redes.font-weight-bold.text-11(placeholder="BUSCAR")
+									span.fa.fa-search.text-10
 				.col-md-2
 			.row
 				.col-md-2
@@ -37,13 +42,13 @@ html(lang='es-PE')
 						.row
 							.col-md-4
 								block header-logo-image
-									.header-logo
+									.header-logo.pdt-10
 										+imagen('../image/logo-la-republica.jpg')
 							.col-md-4
 								block header-editorial-noticia
 							.col-md-4
 								block autor
-									.editorial-autor
+									.editorial-autor.mgt-2
 										.img-edit
 											+imagen('../image/img_editorial_text.jpg')
 										+autor('La corrupción, los origenes','Gustavo Mohme Llona')

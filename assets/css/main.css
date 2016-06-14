@@ -1,8 +1,32 @@
+.pdt-2 {
+  padding-top: 2%; }
+
+.pdt-5 {
+  padding-top: 5%; }
+
+.pdt-10 {
+  padding-top: 10%; }
+
+.pd-1 {
+  padding: 1%; }
+
+.mgt-2 {
+  margin-top: 2%; }
+
+.mgt-5 {
+  margin-top: 5%; }
+
+.text-12 {
+  font-size: 12px; }
+
 a {
   text-decoration: none; }
 
 a:hover {
   text-decoration: none; }
+
+.position-relative {
+  position: relative; }
 
 .tam-1 {
   width: 20px; }
@@ -14,7 +38,7 @@ a:hover {
   font-size: 11px; }
 
 .f-plomo {
-  background-color: #DDE0E2; }
+  background-color: #F2F2F2; }
 
 .t-plomo {
   color: #8D8383; }
@@ -24,6 +48,15 @@ a:hover {
 
 .inline-block {
   display: inline-block; }
+
+.inline {
+  display: inline; }
+
+.bg-azulino {
+  background: #0B4C5F; }
+
+.color-blanco {
+  color: #fff; }
 
 .azul {
   color: #112E8D; }
@@ -49,6 +82,9 @@ a:hover {
 .font-weight-bold {
   font-weight: bold; }
 
+.font-style-italic {
+  font-style: italic; }
+
 .t-rojo {
   color: #BB1313; }
 
@@ -57,6 +93,9 @@ a:hover {
 
 .t-celeste {
   color: #4DB8EA; }
+
+.t-pt-sans {
+  font-family: "PT Sans", sans-serif; }
 
 .t-courguete {
   font-family: "Courgette", sans-serif; }
@@ -117,16 +156,23 @@ a:hover {
 .input-redes {
   border: none;
   width: 50px;
-  background: #DDE0E2; }
+  background: #F2F2F2; }
 
-.header-logo {
-  vertical-align: middle; }
+.header-editorial {
+  border: 1px solid #F2F2F2;
+  border-bottom: 2px solid #0B4C5F; }
+
+.header-editorial p:nth-child(1) {
+  top: -5px; }
 
 .editorial-autor .img-edit {
   display: inline-block; }
 
 .editorial-autor .autor {
-  display: inline-block; }
+  padding: 2% 9%;
+  border: 1px solid #F2F2F2;
+  vertical-align: top;
+  border-radius: 5px; }
 
 .justificado {
   text-align: justify; }
