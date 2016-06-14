@@ -158,3 +158,8 @@ mixin blogueros(url,nombre,texto)
 				br
 				a(href="#")=texto
 //-mixin para reportero ciudadano
+mixin reportero-ciudadano(url,titulo,texto)
+	.div
+		+imagen(url)
+		h4=titulo
+		p=texto
