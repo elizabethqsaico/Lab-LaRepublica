@@ -163,3 +163,28 @@ mixin reportero-ciudadano(url,titulo,texto)
 		+imagen(url)
 		h4=titulo
 		p=texto
+//- mixin  pregunta del dia
+mixin pregunta-hoy(pregunta)
+	.div.pregunta-dia
+		h3 La pregunta de Hoy
+		p= pregunta
+		+input-radio( 'radio',{radiolabel: 'Si'})
+		+input-radio( 'radio',{radiolabel: 'No'})
+		.div.text-center
+			a.btn-rojo.mg-medio(href="#") VOTAR
+		.div.text-center
+			a.t-rojo(href="#") Ver los resultados
+//- mixin  pregunta de ayer
+mixin pregunta-ayer(pregunta)
+	.div.pregunta-dia
+		h4 La pregunta de Ayer
+		p= pregunta
+		.div
+			
+		.div.text-center
+			a.t-rojo(href="#") Ver preguntas pasadas
+mixin input-radio(type,args)
+	.div.text-center
+		p
+			input(type= type)
+			!= args.radiolabel
