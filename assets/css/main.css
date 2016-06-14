@@ -55,6 +55,9 @@ a:hover {
 .bg-azulino {
   background: #0B4C5F; }
 
+.bg-rojiso {
+  background: #BB1313; }
+
 .color-blanco {
   color: #fff; }
 
@@ -166,13 +169,33 @@ a:hover {
   top: -5px; }
 
 .editorial-autor .img-edit {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
 
 .editorial-autor .autor {
-  padding: 2% 9%;
+  padding: 2% 8%;
   border: 1px solid #F2F2F2;
   vertical-align: top;
   border-radius: 5px; }
+
+.header-menu {
+  margin: 0 auto;
+  padding: 0; }
+
+.header-menu li {
+  background: #BB1313; }
+
+.header-menu a {
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 11px;
+  margin-left: 0.6em; }
+
+.tema-dia a:nth-child(1) {
+  background: #111;
+  font-family: "PT Sans";
+  font-size: 11px;
+  color: #fff; }
 
 .justificado {
   text-align: justify; }

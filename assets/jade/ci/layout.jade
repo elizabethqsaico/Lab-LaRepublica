@@ -48,14 +48,14 @@ html(lang='es-PE')
 								block header-editorial-noticia
 							.col-md-4
 								block autor
-									.editorial-autor.mgt-2
+									.editorial-autor.mgt-5
 										.img-edit
 											+imagen('../image/img_editorial_text.jpg')
 										+autor('La corrupción, los origenes','Gustavo Mohme Llona')
 										.img-edit
 											+imagen('../image/img_author.jpg')
 					block header-menu
-						ul.list-unstyled.list-inline
+						ul.list-unstyled.list-inline.header-menu
 							+header-lista('POLITICA')
 							+header-lista('SOCIEDAD')
 							+header-lista('ELECC.REGIONALES')
@@ -74,7 +74,7 @@ html(lang='es-PE')
 						+imagen('../image/clubventa.jpg')
 				.col-md-8
 					block tema-dia
-						ul.pagination
+						ul.pagination.tema-dia
 							+header-lista('TEMAS DEL DÍA')
 							li
 								a(href="#" aria-label="Previous") 

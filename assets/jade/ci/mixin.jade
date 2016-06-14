@@ -59,11 +59,11 @@ mixin li-span(span, color)
 			span.mg-0.pd-0(class= span, class= color)
 
 mixin header-lista(item)
-	li.mg-0.pd-0
-		a.t-plomo.mg-0.pd-0.font-weight-bold(href="#")= item
+	li
+		a.t-plomo.font-weight-bold(href="#")= item
 mixin header-editorial(titulo,subtitulo)
 	.header-editorial.text-center.mgt-5
-		p.bg-azulino.t-oswald.font-weight-bold.position-relative.mgt-2.pd-1.text-11.inline.mgt-2(class= 'color-blanco')= titulo
+		p.bg-rpjiso.t-oswald.font-weight-bold.position-relative.mgt-2.pd-1.text-11.inline.mgt-2(class= 'rojo')= titulo
 		p.t-pt-sans.t-negro.text-11.pd-1= subtitulo
 mixin autor(titulo,nombreautor)
 	.autor.inline-block.text-center
