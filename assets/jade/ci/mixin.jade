@@ -60,15 +60,15 @@ mixin li-span(span, color)
 
 mixin header-lista(item)
 	li.mg-0.pd-0
-		a.t-plomo.mg-0.pd-0.text-10.font-weight-bold(href="#")= item
+		a.t-plomo.mg-0.pd-0.font-weight-bold(href="#")= item
 mixin header-editorial(titulo,subtitulo)
-	.div
-		h4= titulo
-		p= subtitulo
+	.header-editorial.text-center.mgt-5
+		p.bg-azulino.t-oswald.font-weight-bold.position-relative.mgt-2.pd-1.text-11.inline.mgt-2(class= 'color-blanco')= titulo
+		p.t-pt-sans.t-negro.text-11.pd-1= subtitulo
 mixin autor(titulo,nombreautor)
-	.autor
-		h4= titulo
-		p= 'por:' + nombreautor
+	.autor.inline-block.text-center
+		p.t-tp-sans.text-11= titulo
+		p.t-tp-sans.font-style-italic.text-11= 'por:' + nombreautor
 //- mixin para generar los articulos de seccion blog y columnistas
 mixin seccion(seccion,descripcion)
 	h1=seccion
