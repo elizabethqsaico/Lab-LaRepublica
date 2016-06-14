@@ -27,12 +27,12 @@ mixin home-columnista(url,columnista,titulo)
 			a(href="#")= val
 //- mixin home-especiales
 mixin home-especiales(col,titulo, url, subtitulo,comentario)
-	li
-		.home-col
-			h4.t-rojo.text-center= titulo
+	div(class= col)
+		.especial.pd-1.text-11.t-pt-sans
+			p.t-rojo.text-center.font-weight-bold= titulo
 			img.img-responsive(src= url)
-			h5= subtitulo
-			p.text-11= comentario
+			p= subtitulo
+			p.text-11.font-weight-bold= comentario
 //- mixin suscripcion 
 mixin home-suscripcion(url,titulo)
 	img.img-responsive(src= url)
@@ -106,7 +106,7 @@ mixin ultimas-noticias(fecha,titulo,url,texto,numcomentarios,tipo)
 	li.ultima-noticia.borde-inf
 		p.text-10=fecha
 		a(href="#")
-			h3=titulo
+			h3.text-left=titulo
 		.row
 			.col-sm-4
 				+imagen(url)

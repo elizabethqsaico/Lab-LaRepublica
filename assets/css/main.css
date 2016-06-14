@@ -220,6 +220,9 @@ a:hover {
 .header-titular a {
   color: #8D8383; }
 
+.especial {
+  border: 1px solid #F2F2F2; }
+
 .justificado {
   text-align: justify; }
 
@@ -318,7 +321,11 @@ a:hover {
 #contacto .enviar {
   text-align: center; }
 
-#inicio h1, #inicio h3, #inicio h4 {
+.tittle-columnista {
+  position: relative;
+  top: 20px; }
+
+#inicio h1, #inicio h4 {
   font-family: "TP Sans", sans-serif;
   font-weight: 700;
   text-align: center; }
@@ -333,6 +340,16 @@ a:hover {
   padding-left: 4%;
   padding-right: 2%; }
 
+#inicio .noticias h4 {
+  padding-top: 37%;
+  color: #fff;
+  text-align: left;
+  padding-left: 4%;
+  padding-right: 2%; }
+
+#inicio .noticias .opacity {
+  background-color: rgba(0, 0, 0, 0.5); }
+
 #inicio .noticias .capa-degradada {
   background-color: rgba(0, 0, 0, 0.5); }
 
@@ -343,14 +360,35 @@ a:hover {
   margin: 0;
   padding: 0; }
 
+#inicio .noticias .secundario-1 {
+  background: url(../image/img_grid_secundario.jpg);
+  background-size: cover;
+  background-position: top;
+  margin: 0;
+  padding: 0; }
+
+#inicio .noticias .secundario-2 {
+  background: url(../image/img_grid_especiales.jpg);
+  background-size: cover;
+  background-position: top;
+  margin: 0;
+  padding: 0; }
+
 #inicio .lista-columnista img {
   border: 2px solid #fff;
-  margin: 0.5em auto; }
+  margin: 0.5em auto;
+  width: 80px;
+  height: 80px; }
 
 #inicio .lista-columnista li {
+  margin-top: 2%;
+  vertical-align: top;
   width: 120px; }
   #inicio .lista-columnista li h5 {
     font-weight: bold; }
+
+#inicio .border-top-rojo {
+  border-top: 2px solid #BB1313; }
 
 #inicio .secciones li {
   width: 230px;

@@ -13,20 +13,18 @@ block content
 				+li-a-img('Hace 12 minutos','../image/bullet.gif')
 				+li-a-img('POLITICA','')
 		.row.noticias
-			.capa-degradada
-				.col-md-6.principal
-					h3 JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
-			.capa-degradada
-				.col-md-6
-					.secundario-1
-						h4 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | FOTOS
-					.secundario-2
-						h4 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
+			.col-md-6.principal
+				h3.opacity.t-pt-sans JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
+			.col-md-6
+				.secundario-1
+					h4.opacity.t-pt-sans Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | FOTOS
+				.secundario-2.mgt-2
+					h4.opacity.t-pt-sans Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
 		//- Columnistas
 		.row
-			.div.text-center.mg-medio
+			.div.text-center.mg-medio.tittle-columnista
 				a.btn-rojo(href='#') COLUMNISTAS
-			ul.list-unstyled.list-inline.f-plomo.text-center.lista-columnista
+			ul.list-unstyled.list-inline.f-plomo.text-center.lista-columnista.border-top-rojo.mgt-2.t-pt-sans
 				+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
 				+home-columnista('../image/img_blogueros.jpg','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
 				+home-columnista('../image/img-columnistas.jpg','Mario Vargas Llosa','Megarrenuncia apulpinante')
@@ -38,11 +36,11 @@ block content
 		.row
 			.col-sm-8
 				.row
-					+home-especiales('.col-xs-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
-					+home-especiales('.col-xs-6','Régimen laboral juvenil','../image/img_especiales_aside.jpg','Ollanta Humala:Los que han perdido, más alla de tambores y paderetas, son dos millones de jóvenes','Todo sobre Régimen laboral juvenil')
+					+home-especiales('col-md-6','Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015: altas,bajas y rumores de los equipos peruanos','Todo sobre Mercado de Pases 2015')
+					+home-especiales('col-md-6','Régimen laboral juvenil','../image/img_especiales_aside.jpg','Ollanta Humala:Los que han perdido, más alla de tambores y paderetas, son dos millones de jóvenes','Todo sobre Régimen laboral juvenil')
 				.row
-					+home-especiales('.col-xs-6','Champions League','../image/img_especiales_champions.jpg','Podrá el Real Madrid conseguir la "Úndecima"?','Todo sobre Champions League')
-					+home-especiales('.col-xs-6','Super Bowl','../image/img_especiales_bowl.jpg','Super Bowl XLIX:New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks | VIDEO','Todo sobre Super Bowl')
+					+home-especiales('col-md-6','Champions League','../image/img_especiales_champions.jpg','Podrá el Real Madrid conseguir la "Úndecima"?','Todo sobre Champions League')
+					+home-especiales('col-md-6','Super Bowl','../image/img_especiales_bowl.jpg','Super Bowl XLIX:New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks | VIDEO','Todo sobre Super Bowl')
 			.col-sm-4
 				+imagen('../image/banner-aside-home.jpg')
 		.row

@@ -91,6 +91,7 @@ a:hover{text-decoration:none;}
 	img{margin-left:2px;}
 }
 .header-titular a{color: $color-texto;}
+.especial{border: 1px solid $color-gris;}
 .justificado{text-align:justify;}
 .left{text-align:left;}
 .right{text-align:right;}
@@ -160,24 +161,31 @@ a:hover{text-decoration:none;}
 	}
 	.enviar{text-align:center;}
 }
+.tittle-columnista{position:relative; top:20px;}
 #inicio{
-	h1,h3,h4{font-family: "TP Sans", sans-serif; font-weight:700; text-align:center;}
+	h1,h4{font-family: "TP Sans", sans-serif; font-weight:700; text-align:center;}
 	.noticias{font-family: "PT Sans", sans-serif;}
 	.noticias{
 		h3,h4{padding-top:75%;color:#fff;text-align:left; padding-left:4%; padding-right:2%;}
+		h4{padding-top:37%;color:#fff;text-align:left; padding-left:4%; padding-right:2%;}
+		.opacity{background-color:rgba(0,0,0,0.5);}
 		.capa-degradada{
 			background-color:rgba(0,0,0,0.5);
 		}
 		.principal{background:url(../image/img_grid_principal.jpg); background-size: cover;  background-position: top;  margin:0; padding:0;}
 		.secundario-1{background:url(../image/img_grid_secundario.jpg); background-size: cover;  background-position: top;  margin:0; padding:0;}
 		.secundario-2{background:url(../image/img_grid_especiales.jpg); background-size: cover;  background-position: top;  margin:0; padding:0;}
+	}
 	.lista-columnista{
-		img{border: 2px solid #fff; margin:0.5em auto;}
+		img{border: 2px solid #fff; margin:0.5em auto; width:80px; height:80px;}
 		li{
+			margin-top:2%;
+			vertical-align: top;
 			width:120px;
 			h5{font-weight:bold;}
 		}
 	}
+	.border-top-rojo{border-top: 2px solid $color-rojiso;}
 	.secciones{
 		li{
 			width:230px;
