@@ -178,8 +178,11 @@ a:hover {
   vertical-align: top;
   border-radius: 5px; }
 
+.header-list a {
+  color: #8D8383; }
+
 .header-menu {
-  margin: 0 auto;
+  margin: 0.5% auto;
   padding: 0; }
 
 .header-menu li {
@@ -191,11 +194,28 @@ a:hover {
   font-size: 11px;
   margin-left: 0.6em; }
 
-.tema-dia a:nth-child(1) {
+.tema-dia {
+  margin: 0.5% auto;
+  padding: 0; }
+
+.tema-dia li {
+  background: #F2F2F2;
+  font-family: "PT Sans";
+  padding-top: 1%;
+  padding-bottom: 1%; }
+
+.tema-dia li:nth-child(1) {
   background: #111;
   font-family: "PT Sans";
   font-size: 11px;
   color: #fff; }
+
+.tema-dia a {
+  color: #8D8383;
+  font-size: 10.4px; }
+
+.tema-dia img {
+  margin-left: 2px; }
 
 .justificado {
   text-align: justify; }

@@ -77,13 +77,18 @@ a:hover{text-decoration:none;}
 	.img-edit{ display: inline-block; vertical-align:top; }
 	.autor{padding: 2% 8%; border: 1px solid $color-gris; vertical-align:top; border-radius:5px;}
 }
-.header-menu{margin: 0 auto; padding:0;}
+.header-list a{color: $color-texto;}
+.header-menu{margin: 0.5% auto; padding:0;}
 .header-menu{
 	li{background: $color-rojiso;}
 	a{color: $color-blanco; font-family: "PT Sans", sans-serif; font-size:11px; margin-left:0.6em;}
 }
-.tema-dia{
-	a:nth-child(1){background: $color-negro; font-family: "PT Sans"; font-size:11px; color: $color-blanco; }
+.tema-dia{margin: 0.5% auto; padding:0;}
+.tema-dia {
+	li{background: $color-gris; font-family: "PT Sans"; padding-top:1%; padding-bottom:1%;}
+	li:nth-child(1){background: $color-negro; font-family: "PT Sans"; font-size:11px; color: $color-blanco; }
+	a{color: $color-texto; font-size:10.4px;}
+	img{margin-left:2px;}
 }
 .justificado{text-align:justify;}
 .left{text-align:left;}

@@ -54,16 +54,16 @@ mixin li-a-img(tema,imagen,tam)
 			img.tam(src= imagen)
 
 mixin li-span(span, color)
-	li.li-span.mg-0.pd-0
-		a.mg-0(href="#")&attributes(attributes)
-			span.mg-0.pd-0(class= span, class= color)
+	li
+		a(href="#")&attributes(attributes)
+			span(class= span, class= color)
 
 mixin header-lista(item)
 	li
-		a.t-plomo.font-weight-bold(href="#")= item
+		a.font-weight-bold(href="#")= item
 mixin header-editorial(titulo,subtitulo)
 	.header-editorial.text-center.mgt-5
-		p.bg-rpjiso.t-oswald.font-weight-bold.position-relative.mgt-2.pd-1.text-11.inline.mgt-2(class= 'rojo')= titulo
+		p.bg-rojiso.t-oswald.font-weight-bold.position-relative.mgt-2.pd-1.text-11.inline.mgt-2(class= 'color-blanco')= titulo
 		p.t-pt-sans.t-negro.text-11.pd-1= subtitulo
 mixin autor(titulo,nombreautor)
 	.autor.inline-block.text-center

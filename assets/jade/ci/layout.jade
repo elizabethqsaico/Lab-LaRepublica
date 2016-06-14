@@ -18,7 +18,7 @@ html(lang='es-PE')
 					.row.t-pt-sans.text-11
 						block header-list
 							.col-sm-6.mg-0.pd-0
-								ul.list-unstyled.list-inline.mg-0.pd-0.ptb-2
+								ul.list-unstyled.list-inline.mg-0.pd-0.ptb-2.header-list
 									+header-lista('LIBERO.PE')
 									+header-lista('ELPOPULAR.PE')
 									+header-lista('FUNDACION GUSTAVO MOHME LLONA')
@@ -55,7 +55,7 @@ html(lang='es-PE')
 										.img-edit
 											+imagen('../image/img_author.jpg')
 					block header-menu
-						ul.list-unstyled.list-inline
+						ul.list-unstyled.list-inline.header-menu.mgt-5
 							+header-lista('POLITICA')
 							+header-lista('SOCIEDAD')
 							+header-lista('ELECC.REGIONALES')
@@ -74,7 +74,7 @@ html(lang='es-PE')
 						+imagen('../image/clubventa.jpg')
 				.col-md-8
 					block tema-dia
-						ul.pagination
+						ul.list-unstyled.list-inline.tema-dia.mgt-5
 							+header-lista('TEMAS DEL DÍA')
 							li
 								a(href="#" aria-label="Previous") 
